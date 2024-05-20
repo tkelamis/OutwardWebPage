@@ -186,6 +186,20 @@ a:hover {
     text-decoration:underline;
 }
 
+.modal-menu ul, 
+.modal-menu ul ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.modal-menu li {
+    padding-left: 1rem;
+}
+
+.modal-menu li ul {
+    padding-left: 0;
+}
+
 .main{
     margin-top: 80px;
     color: white;
@@ -248,16 +262,21 @@ a:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
+.special-thanks{
+    text-align: center;
+    padding-bottom: 2%;
+}
 
 .social
 {
+    display: flex;
     margin-top: auto;
     bottom: 0;
-    display: flex;
     padding: 50px 30px;
     background-color: rgb(39, 37, 37);
     justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 .copyright
 {
@@ -269,56 +288,12 @@ a:hover {
 {
     color: white;
     font-family: 'Quicksand', sans-serif;
+    text-align: right;
 }
 .social-apps i
 {
-    font-size: 2.3rem;
+    font-size: 30px;
     color: rgb(45, 45, 156);
-}
-
-
-
-.accordion-button {
-    --bs-accordion-btn-bg: #41275c;
-    --bs-accordion-active-bg: #41275c;
-    --bs-accordion-bg: #41275c;
-}
-
-.accordion-item {
-    background-color: #41275c;
-}
-
-.accordion {
-    /* --bs-accordion-border-color: #f8f9fa; */
-    /* color: #f8f9fa; */
-    --bs-accordion-btn-focus-box-shadow: #f8f9fa;
-    /* --bs-accordion-active-color: #f0f0f0; */
-    font-family: 'Quicksand', sans-serif;
-}
-
-.accordion p{
-    font-size: 16px;
-}
-
-.accordion-body{
-    color: #f8f9fa;
-}
-
-/* .accordion-button:not(.collapsed) {
-    color:#f8f9fa !important;
-} */
-
-.accordion-button:not(.collapsed) svg {
-    fill: #f8f9fa !important; /* Set color of caret icon to white when accordion is open */
-}
-
-.accordion-button.collapsed svg {
-    fill: #f8f9fa !important; /* Set color of caret icon to white when accordion is closed */
-}
-
-.accordion-button,
-.accordion-button:not(.collapsed) {
-    color: #f8f9fa !important; /* Set text color to white */
 }
 
 
@@ -344,7 +319,7 @@ a:hover {
         font-size: 20px;
     }
 
-    .main-subtitle p{
+    .main-subtitle p, .special-thanks p{
         font-size: 16px;
     }
 
@@ -376,7 +351,7 @@ a:hover {
 
     
 .version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
-    transform: scale(0.7);
+    transform: scale(0.9);
     gap: 0;
 }
   }

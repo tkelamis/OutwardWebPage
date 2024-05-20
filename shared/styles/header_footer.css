@@ -175,17 +175,31 @@ body{
     text-decoration:underline;
 }
 
+.modal-menu ul, 
+.modal-menu ul ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.modal-menu li {
+    padding-left: 1rem; /* Adjust spacing as needed */
+}
+
+.modal-menu li ul {
+    padding-left: 0; /* Reset padding for nested lists */
+}
+
 .social
 {
+    display: flex;
     margin-top: auto;
     bottom: 0;
-    display: flex;
     padding: 50px 30px;
     background-color: rgb(39, 37, 37);
     justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
-
 .copyright
 {
     color: white;
@@ -196,10 +210,11 @@ body{
 {
     color: white;
     font-family: 'Quicksand', sans-serif;
+    text-align: right;
 }
 .social-apps i
 {
-    font-size: 2.3rem;
+    font-size: 30px;
     color: rgb(45, 45, 156);
 }
 
