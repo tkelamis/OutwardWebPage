@@ -91,6 +91,103 @@
             }
                 
         ]
+    },
+    {
+        "title": "Mercenary",
+        "name": "Jaimon",
+        "location": "Levant",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Philosopher",
+        "name": "Alemmon",
+        "location": "Monsoon",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Rogue Engineer",
+        "name": "Styx",
+        "location": "Levant",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Rune Sage",
+        "name": "Flase",
+        "location": "Berg",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Mercenary",
+        "name": "Jaimon",
+        "location": "Levant",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Warrior Monk",
+        "name": "Galira",
+        "location": "Monsoon",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Wild Hunter",
+        "name": "Ture",
+        "location": "Berg",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Hex Mage",
+        "name": "Ella Lockwell",
+        "location": "Harmattan",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "The Speedster",
+        "name": "Serge",
+        "location": "Harmattan",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Primal Ritualist",
+        "name": "Sinai",
+        "location": "Ritualist's hut",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Weapon Master",
+        "name": "Bea Battleborn",
+        "location": "New Sirocco",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
+    },
+    {
+        "title": "Specialist",
+        "name": "Justin Garnet",
+        "location": "New Sirocco",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+        ]
     }
 ]
+    
     
