@@ -11,7 +11,7 @@ async function main () {
     
     if (data.titlesOfCategory)
     {
-        renderCategories();
+        renderCategories(page);
     }
     
     if (data.items.length > 0) {
@@ -62,10 +62,27 @@ function renderCategories()
         imgAndTitleDiv.appendChild(title);
     }
 
+    const filterButtonDiv = document.createElement('div');
+    filterButtonDiv.classList.add('text-center' , 'p-3')
+    document.getElementById("categoryAndDescription").appendChild(filterButtonDiv);
+
+
+
     const filterButton = document.createElement('button');
+    
+    if (page === 'equipment')
+    {
+        filterButton.classList.add('filter-button-equipment');
+    }
+    if (page === 'weapons')
+    {
+        filterButton.classList.add('filter-button-skills');
+        
+    }
+    
     filterButton.setAttribute('id', 'clearFilters');
-    filterButton.textContent = 'Clear Filters';
-    document.getElementById("categoryAndDescription").appendChild(filterButton);
+    filterButton.textContent = 'Show All';
+    filterButtonDiv.appendChild(filterButton);
 
     addEventListenersOnCategories();
 }

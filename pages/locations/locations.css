@@ -1,5 +1,6 @@
 .location-carousel{
-    width: 650px;
+    width: 40%;
+    min-width: 400px;
     height: auto;
     margin: 150px auto 30px;
 }
@@ -98,4 +99,16 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+
+.location-hallowedMarsh-information,
+.location-enmerkarForest-information,
+.location-abrassar-information,
+.location-antiquePlateau-information,
+.location-caldera-information
+{
+    width: 95%;
+}
 }
