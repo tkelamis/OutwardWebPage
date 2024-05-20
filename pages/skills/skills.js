@@ -1,41 +1,36 @@
 $(document).ready(function()
 {
-    RenderTrainersDivs();
-    fetchTypeOfSkills();
+    main();
 })
 
-const trainers = [
-    {
-        title: "Cabal Hermit",
-        name: "Adalbert",
-        location: "Chersonese",
-        TreeImageUrl: "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png"
-    },
-    {
-        title: "Kazite Spellblade",
-        name: "EtoAkiyuki",
-        location: "Chersonese",
-        TreeImageUrl: "/Outward-WebPage/Images/skills/Kazite_Spellblade_Tree.png"
+let data;
 
-    },
-    {
-        title: "Kazite Spellblade",
-        name: "EtoAkiyuki",
-        location: "Chersonese"
-    }
-];
+async function main () {
 
-let skillsDivCreated = {};
+    data = await fetchJsonData();
 
-function RenderTrainersDivs()
+    renderTrainers();
+    renderSkills();
+}
+
+async function fetchJsonData()
 {
-    //$('#trainersList').empty(); 
-    
-    for (let trainer of trainers) {
+    let jsonPath = `../../JsonFiles/${page}.json`;
+
+    const response = await fetch(jsonPath);
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    const jsonData = await response.json();
+    return jsonData;
+}
+
+function renderTrainers()
+{
+    for (let trainer of data) {
         $('<div>', { 
             class: 'trainer-attributes d-flex flex-column gap-2 p-3 rounded-3 bg-black align-items-center',
-            css: { cursor: 'pointer' },
-            data: { trainer: trainer }
+            css: { cursor: 'pointer' }
         })
         .append(
             $('<div>', { class: 'trainer-image' }).append(
@@ -49,87 +44,47 @@ function RenderTrainersDivs()
     }
 };
 
-function fetchTypeOfSkills()
+function renderSkills()
 {
-    let trythis = $('#trainersList');
-    let childDivs = trythis.children('div');
+    // Selection of trainers divs
+    let trainersDivs = $('#trainersList').children('div');
+    let trainersDivTitle;
 
-
-    for (let div of childDivs) {
-        $(div).click(function()
+    for (let trainerDiv of trainersDivs) {
+        $(trainerDiv).click(function()
         {
-            let trainer = $(div).data('trainer');
-
-            let type = ($(div).children('p').eq(0).text())
+            trainersDivTitle = $(trainerDiv).find('p').first().text();
 
             let divToRemove = $('#skillsDiv');
 
-            if (divToRemove.length > 0) {
+            if (divToRemove) {
                 divToRemove.slideUp( function()
-            {
-                $(divToRemove).remove();
-            })
-        }
-        fetchDataAndRenderTrainersDetails(type, trainer);
+                {
+                    $(divToRemove).remove();
+                })
             }
-        );
-        
+            
+            let trainerObject;
+            for (let trainer of data)
+            {
+                if(trainer.title === trainersDivTitle)
+                {
+                    trainerObject = trainer;
+                }
+            }
+            createSkills(trainerObject);
+        })
     }
 }
 
-function fetchDataAndRenderTrainersDetails(type, trainer)
+function createSkills(trainer)
 {
-    let jsonPath = `/Outward-WebPage/JsonFiles/skills.txt`;
-    let getJson = new XMLHttpRequest();
-
-    getJson.open("GET", jsonPath, true);
-
-    getJson.onreadystatechange = function() {
-        if(getJson.readyState ===4){
-            if(getJson.status === 200)
-            {
-                const dataFromJson = JSON.parse(getJson.responseText);
-
-                GiveMeTheCertainTypeSkills(dataFromJson, type, trainer);
-
-                
-            }
-            else
-            {
-                alert("Error");
-            }
-        }
-    }
-    getJson.send();
-}
-
-function GiveMeTheCertainTypeSkills(dataFromJson, type, trainer)
-{
-    let typeSkillsList = [];
-
-    for (let i of dataFromJson.skills)
-    {
-        if (i.Trainer === type)
-        {
-            typeSkillsList.push(i);
-        }
-        
-    }
-
-    console.log(typeSkillsList);
-
-    CreateAndPopulateSkillsDiv(typeSkillsList, trainer);
-}
-
-function CreateAndPopulateSkillsDiv(typeSkillsList, trainer)
-{
-
     let newSkillsDiv = $('<div>',{id:'skillsDiv',class:'skills pb-5 pt-5'}).insertBefore('#social');
 
     $('<div>',{class:'skill-tree-image text-center p-4'}).append(
-        $('<img>',{src: trainer.TreeImageUrl })).appendTo(newSkillsDiv);
+        $('<img>',{ src: `../../Images/skills/${trainer.title}_Tree.png` })).appendTo(newSkillsDiv);
 
-    for (let skill of typeSkillsList)
+    for (let skill of trainer.skills)
     {
         let skillDiv = $('<div>',{class:'skill-list d-flex flex-column mx-auto bg-black mt-3 p-3 rounded-4 col-8'}).appendTo(newSkillsDiv);
         
@@ -137,7 +92,7 @@ function CreateAndPopulateSkillsDiv(typeSkillsList, trainer)
             $('<h4>', { class: 'skill-title rounded-3 p-2', text: skill.Name }),
             $('<div>', { class: 'skill-image-cost-description d-flex pt-3 gap-4' }).append(
                 $('<div>', { class: 'skill-image' }).append(
-                    $('<img>', { src: skill.SkillImageUrl })
+                    $('<img>', { src: `../../Images/skills/${skill.Name}.png` })
                 ),
                 $('<div>', { class: 'skill-cost-description' }).append(
                     $('<div>', { class: 'skill-cost d-flex gap-4' }).append(
@@ -152,6 +107,5 @@ function CreateAndPopulateSkillsDiv(typeSkillsList, trainer)
             )
         ).appendTo(skillDiv);
     }
-    
     newSkillsDiv.hide().fadeIn(900);
 }

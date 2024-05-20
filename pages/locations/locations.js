@@ -20,16 +20,20 @@ function CarouselLocation()
         $('#location-caldera')
     ]
 
-    $(carouselControls).on('click', function()
+    $(carouselControls).on('click', changeCarousel)
+ 
+    $(sliderIndicators).on('click', changeCarousel)
+ 
+    function changeCarousel()
     {
-        
+       
         for (let i=0; i < sliderIndicators.length; i++)
         {
             if ($(sliderIndicators[i]).hasClass('active'))
             {
                 index = i;
             }
-
+ 
         }
         locations.forEach((location, i) => {
             if (i === index)
@@ -40,8 +44,8 @@ function CarouselLocation()
             {
                 location.css({'display':'none'});
             }}
-                    
+                   
         );
-    })
+    }
 }
             
