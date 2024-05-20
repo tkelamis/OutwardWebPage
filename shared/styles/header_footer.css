@@ -215,7 +215,7 @@ body{
     .menu-logo-image{
         width: 260px;
     }
-    
+
     .logo-image{
         width: 260px;
     }
@@ -226,15 +226,19 @@ body{
     .social{
         font-size: 15px;
     }
-    
+
+}
+
+
+@media only screen and (max-width: 768px) {
 
     .skill-tree-image{
-        width: 270.9px;
-        height: 331.1;
+        width: 0px;
+        height: 331.1px;
     }
     
     .skill-tree-image img{
         width: 100%;
         height: 100%;
     }
-  }
+}

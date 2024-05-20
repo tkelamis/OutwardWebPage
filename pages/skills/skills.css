@@ -41,18 +41,17 @@
 }
 
 .all-skills
-    {
-        flex-wrap: wrap; 
-        gap: 10px;
-        margin-top: 10px;
-      }
+{
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-top: 10px;
+}
 
-      .skill-list{
-        flex: 1 1 calc(50% - 10px); 
-        padding: 20px;
-        text-align: center;
-        box-sizing: border-box;
-      }
+.skill-list{
+    flex: 1 1 calc(50% - 10px); 
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 .skills{
     color: aliceblue;
