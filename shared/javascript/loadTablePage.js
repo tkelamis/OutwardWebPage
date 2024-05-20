@@ -12,6 +12,7 @@ async function main () {
     if (data.titlesOfCategory)
     {
         renderCategories(page);
+        
     }
     
     if (data.items.length > 0) {
@@ -20,7 +21,11 @@ async function main () {
         
         populateTable(data.items);
     }
+
+    scrollToDiv();
 }
+
+
 
 async function fetchJsonData()
 {
@@ -169,4 +174,20 @@ function addEventListenersOnCategories() {
         populateTable(data.items);
     });
 }
+
+function scrollToDiv(){
+    let target;
+    let table = $('.category-imgAndTitleDiv').children('div');
+
+    for (let t of table) {
+        $(t).click(function()
+        {
+            target = $('#dataTable').offset().top- 200;
+            $('html, body').animate({
+                scrollTop: target
+            }, 'slow');
+        })
+    }
+}
+
 

@@ -11,6 +11,7 @@ async function main () {
 
     renderTrainers();
     renderSkills();
+    scrollToDiv();
 }
 
 async function fetchJsonData()
@@ -81,7 +82,7 @@ function createSkills(trainer)
 {
     let newSkillsDiv = $('<div>',{id:'skillsDiv',class:'skills pb-5 pt-5'}).insertBefore('#social');
 
-    $('<div>',{class:'skill-tree-image mx-auto p-4'}).append(
+    $('<div>',{class:'skill-tree-image mx-auto p-4', id:'treeImage'}).append(
         $('<img>',{ src: `../../Images/skills/${trainer.title}_Tree.png` })).appendTo(newSkillsDiv);
 
     $('<div>',{class:'all-skills d-flex mx-auto col-8'}).appendTo(newSkillsDiv);
@@ -112,4 +113,19 @@ function createSkills(trainer)
         $(skillDiv).appendTo($('.all-skills'));
     }
     newSkillsDiv.hide().fadeIn(900);
+}
+
+function scrollToDiv(){
+    let targetPosition;
+    let trainersDivs = $('#trainersList').children('div');
+
+    for (let trainerDiv of trainersDivs) {
+        $(trainerDiv).click(function()
+        {
+            targetPosition = $('#treeImage').offset().top- 80;
+            $('html, body').animate({
+                scrollTop: targetPosition
+            }, 'slow');
+        })
+    }
 }
