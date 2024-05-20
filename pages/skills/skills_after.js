@@ -15,7 +15,7 @@ async function main () {
 
 async function fetchJsonData()
 {
-    let jsonPath = `/Outward-WebPage/JsonFiles/${page}.json`;
+    let jsonPath = `../../JsonFiles/${page}.json`;
 
     const response = await fetch(jsonPath);
     if (!response.ok) {

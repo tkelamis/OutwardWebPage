@@ -82,7 +82,7 @@
 .img-map{
     width: 40%;
     text-align: center;
-    object-fit:fill; /* Ensures the image covers the container */
+    object-fit:fill;
 }
 .img-map img {
     max-width: 100%;
