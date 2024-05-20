@@ -1,0 +1,96 @@
+[
+    {
+        "title": "Cabal Hermit",
+        "name": "Adalbert",
+        "location": "Chersonese",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
+        "skills": [
+            {
+                "Name": "Reveal Soul",
+                "CoinsCost": "50 Coins",
+                "SourceCost": "5 mana",
+                "CoolDown": "5 seconds",
+                "Description": "Reveal the bluish soul orb left by deceased thieves and adventurers. Certain spells must be cast within proximity of a soul."
+            },
+            {
+                "Name": "Call to Elements",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Call upon the elements to imbue your weapon with elemental power, adding additional damage based on your equipped weapon's damage type."
+            },
+            {
+                "Name": "Mana Push",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "12 seconds",
+                "Description": "Release a burst of pure mana, pushing back enemies and disrupting their actions. The force of the push increases with your mana pool."
+            },
+            {
+                "Name": "Weather Tolerance",
+                "CoinsCost": "150 Coins",
+                "SourceCost": "15 mana",
+                "CoolDown": "30 seconds",
+                "Description": "Attune yourself to the weather, gaining resistance to its effects. Whether it's scorching heat or freezing cold, you'll endure it with ease."
+            },
+            {
+                "Name": "Shamanic Resonance",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Channel your inner shamanic energy, empowering your spells with additional effects based on your connection to nature."
+            },
+            {
+                "Name": "Sigil of Wind",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Inscribe a mystical sigil of wind, creating a swirling vortex that damages enemies caught within its radius. The sigil dissipates after a short duration."
+            },
+            {
+                "Name": "Infuse Wind",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "18 seconds",
+                "Description": "Infuse your attacks with the power of the wind, increasing their speed and granting a chance to knock back enemies with each strike."
+            },
+            {
+                "Name": "Conjure",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Summon a spectral weapon to fight by your side. The weapon's strength and abilities depend on your own magical prowess."
+            }
+        ]
+    },
+    {
+        "title": "Kazite Spellblade",
+        "name": "EtoAkiyuki",
+        "location": "Chersonese",
+        "TreeImageUrl": "/Outward-WebPage/Images/skills/Kazite_Spellblade_Tree.png",
+        "skills": [
+            {
+                "Trainer":"Kazite Spellblade",
+                "Name": "Steady Arm",
+                "SkillsTreeImageUrl": "",
+                "SkillImageUrl": "",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Increase stability, reducing the impact of attacks."
+            },
+            {
+                "Trainer":"Kazite Spellblade",
+                "Name": "Shield Charge",
+                "SkillsTreeImageUrl": "",
+                "SkillImageUrl": "",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Charge forward with your shield raised to knock down enemies."
+            }
+                
+        ]
+    }
+]
+    

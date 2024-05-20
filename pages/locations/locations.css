@@ -1,0 +1,101 @@
+.location-carousel{
+    width: 650px;
+    height: auto;
+    margin: 150px auto 30px;
+}
+
+.location-carousel p{
+    margin-bottom: 0;
+}
+
+.carousel-indicators{
+    list-style-type: none;
+}
+
+.carousel-inner{
+    border-radius: 50px;
+}
+
+.carousel-control-prev{
+    border-top: none;
+    border-bottom: none;
+}
+
+.location-chersonese-information{
+    display: flex;
+    margin: 0 auto;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 15px;
+    gap: 3rem;
+    background-color: rgb(72, 80, 2);
+    border-radius: 10px;
+}
+
+.location-hallowedMarsh-information,
+.location-enmerkarForest-information,
+.location-abrassar-information,
+.location-antiquePlateau-information,
+.location-caldera-information
+{
+    display: none;
+    margin: 0 auto;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 15px;
+    gap: 3rem;
+    border-radius: 10px;
+}
+
+.location-hallowedMarsh-information{
+    background-color: rgb(73, 76, 59);
+}
+
+.location-enmerkarForest-information
+{
+    background-color:rgb(128, 93, 12)
+}
+
+.location-abrassar-information{
+    background-color:rgb(116, 69, 35)
+}
+.location-antiquePlateau-information{
+    background-color:rgb(95, 88, 61)
+}
+
+.location-caldera-information{
+    background-color:rgb(42, 51, 77)
+}
+
+
+
+.location-description{
+    margin: 0 auto;
+}
+
+.img-map{
+    width: 40%;
+    text-align: center;
+    object-fit:fill; /* Ensures the image covers the container */
+}
+.img-map img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.location-weather{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.location-mainlocations{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}

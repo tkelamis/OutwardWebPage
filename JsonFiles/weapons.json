@@ -1,0 +1,754 @@
+{
+    "name":"weapons",
+    "description":"Weapons are used for damage and skills, thought they can also have other effects and uses.",
+    "titlesOfCategory": ["Axes", "Bows", "Maces", "Swords", "Chakrams", "Daggers", "Pistols", "Lanterns", "Lexicons", "Shields"],
+    "items": [
+        {
+            "name": "Brutal Greataxe",
+            "type": "Two-Handed",
+            "damage": 33,
+            "Speed": 0.9,
+            "weight": 8,
+            "Effects": "Scorched, Chill",
+            "Category": "Axes"
+        },
+        {
+            "name": "Savage Poleaxe",
+            "type": "Two-Handed",
+            "damage": 28,
+            "Speed": 1.0,
+            "weight": 6,
+            "Effects": "Poisoned, Burned",
+            "Category": "Axes"
+        },
+        {
+            "name": "Deadly Cleaver",
+            "type": "One-Handed",
+            "damage": 25,
+            "Speed": 1.2,
+            "weight": 5,
+            "Effects": "Bleeding, Poisoned",
+            "Category": "Axes"
+        },
+        {
+            "name": "Heavy Battleaxe",
+            "type": "One-Handed",
+            "damage": 28,
+            "Speed": 1.1,
+            "weight": 7,
+            "Effects": "Staggered",
+            "Category": "Axes"
+        },
+        {
+            "name": "Fiery Halberd",
+            "type": "Two-Handed",
+            "damage": 30,
+            "Speed": 0.8,
+            "weight": 7,
+            "Effects": "Burned",
+            "Category": "Axes"
+        },
+        {
+            "name": "Frostblade",
+            "type": "One-Handed",
+            "damage": 20,
+            "Speed": 1.3,
+            "weight": 4,
+            "Effects": "Chilled",
+            "Category": "Axes"
+        },
+        {
+            "name": "Ancient Warhammer",
+            "type": "Two-Handed",
+            "damage": 35,
+            "Speed": 0.7,
+            "weight": 10,
+            "Effects": "Staggered, Poisoned",
+            "Category": "Axes"
+        },
+        {
+            "name": "Rusted Hatchet",
+            "type": "One-Handed",
+            "damage": 15,
+            "Speed": 1.4,
+            "weight": 3,
+            "Effects": "Rusted",
+            "Category": "Axes"
+        },
+        {
+            "name": "Barbaric Axe",
+            "type": "Two-Handed",
+            "damage": 32,
+            "Speed": 0.9,
+            "weight": 9,
+            "Effects": "Bleeding",
+            "Category": "Axes"
+        },
+        {
+            "name": "Tempered Greatmace",
+            "type": "Two-Handed",
+            "damage": 30,
+            "Speed": 0.8,
+            "weight": 8,
+            "Effects": "Staggered",
+            "Category": "Axes"
+        },
+        {
+        "name": "Longbow of the Hunter",
+        "type": "Two-Handed",
+        "damage": 28,
+        "Speed": 1.2,
+        "weight": 6,
+        "Effects": "Poisoned, Slowed",
+        "Category": "Bows"
+        },
+        {
+            "name": "Swift Shortbow",
+            "type": "One-Handed",
+            "damage": 20,
+            "Speed": 1.4,
+            "weight": 4,
+            "Effects": "Bleeding",
+            "Category": "Bows"
+        },
+        {
+            "name": "Ranger's Longbow",
+            "type": "Two-Handed",
+            "damage": 32,
+            "Speed": 1.0,
+            "weight": 7,
+            "Effects": "Piercing",
+            "Category": "Bows"
+        },
+        {
+            "name": "Venomous Crossbow",
+            "type": "Two-Handed",
+            "damage": 30,
+            "Speed": 1.1,
+            "weight": 8,
+            "Effects": "Poisoned",
+            "Category": "Bows"
+        },
+        {
+            "name": "Frostfire Bow",
+            "type": "Two-Handed",
+            "damage": 35,
+            "Speed": 0.8,
+            "weight": 9,
+            "Effects": "Chilled, Scorched",
+            "Category": "Bows"
+        },
+        {
+            "name": "Ancient Elven Longbow",
+            "type": "Two-Handed",
+            "damage": 38,
+            "Speed": 0.7,
+            "weight": 10,
+            "Effects": "Piercing, Bleeding",
+            "Category": "Bows"
+        },
+        {
+            "name": "Marksman's Shortbow",
+            "type": "One-Handed",
+            "damage": 25,
+            "Speed": 1.3,
+            "weight": 5,
+            "Effects": "Piercing",
+            "Category": "Bows"
+        },
+        {
+            "name": "Enchanted Composite Bow",
+            "type": "Two-Handed",
+            "damage": 34,
+            "Speed": 0.9,
+            "weight": 8,
+            "Effects": "Bleeding, Slowed",
+            "Category": "Bows"
+        },
+        {
+            "name": "Shadowseeker Longbow",
+            "type": "Two-Handed",
+            "damage": 36,
+            "Speed": 0.8,
+            "weight": 9,
+            "Effects": "Piercing, Poisoned",
+            "Category": "Bows"
+        },
+        {
+            "name": "Hunting Shortbow",
+            "type": "One-Handed",
+            "damage": 22,
+            "Speed": 1.2,
+            "weight": 5,
+            "Effects": "Bleeding",
+            "Category": "Bows"
+        },
+        {
+            "name": "Sturdy Hunting Bow",
+            "type": "Two-Handed",
+            "damage": 30,
+            "Speed": 1.0,
+            "weight": 7,
+            "Effects": "Piercing, Knockback",
+            "Category": "Bows"
+        },
+        {
+            "name": "Stormcaller's Composite Bow",
+            "type": "Two-Handed",
+            "damage": 40,
+            "Speed": 0.7,
+            "weight": 10,
+            "Effects": "Chilled, Piercing",
+            "Category": "Bows"
+        },
+        {
+            "name": "Ethereal Elven Longbow",
+            "type": "Two-Handed",
+            "damage": 42,
+            "Speed": 0.6,
+            "weight": 11,
+            "Effects": "Piercing, Knockback",
+            "Category": "Bows"
+        },
+        {
+            "name": "Heavy Iron Mace",
+            "type": "Two-Handed",
+            "damage": 35,
+            "Speed": 0.8,
+            "weight": 10,
+            "Effects": "Stagger",
+            "Category": "Maces"
+        },
+        {
+            "name": "Stone Club",
+            "type": "Two-Handed",
+            "damage": 25,
+            "Speed": 1.0,
+            "weight": 8,
+            "Effects": "Knockdown",
+            "Category": "Maces"
+        },
+        {
+            "name": "Spiked Iron Mace",
+            "type": "One-Handed",
+            "damage": 28,
+            "Speed": 0.9,
+            "weight": 7,
+            "Effects": "Bleeding",
+            "Category": "Maces"
+        },
+        {
+            "name": "Ancient Mace",
+            "type": "Two-Handed",
+            "damage": 40,
+            "Speed": 0.7,
+            "weight": 11,
+            "Effects": "Stun",
+            "Category": "Maces"
+        },
+        {
+            "name": "Reinforced Steel Mace",
+            "type": "Two-Handed",
+            "damage": 45,
+            "Speed": 0.6,
+            "weight": 12,
+            "Effects": "Crush",
+            "Category": "Maces"
+        },
+        {
+            "name": "Wooden Warhammer",
+            "type": "Two-Handed",
+            "damage": 30,
+            "Speed": 1.1,
+            "weight": 9,
+            "Effects": "Stagger",
+            "Category": "Maces"
+        },
+        {
+            "name": "Barbed Iron Mace",
+            "type": "One-Handed",
+            "damage": 32,
+            "Speed": 0.8,
+            "weight": 6,
+            "Effects": "Bleeding",
+            "Category": "Maces"
+        },
+        {
+            "name": "Silvered Mace",
+            "type": "One-Handed",
+            "damage": 36,
+            "Speed": 0.7,
+            "weight": 8,
+            "Effects": "Stun",
+            "Category": "Maces"
+        },
+        {
+            "name": "Steel Warhammer",
+            "type": "Two-Handed",
+            "damage": 38,
+            "Speed": 0.7,
+            "weight": 10,
+            "Effects": "Crush",
+            "Category": "Maces"
+        },
+        {
+        "name": "Iron Broadsword",
+        "type": "One-Handed",
+        "damage": 30,
+        "Speed": 1.0,
+        "weight": 6,
+        "Effects": "None",
+        "Category": "Swords"
+        },
+        {
+            "name": "Steel Longsword",
+            "type": "Two-Handed",
+            "damage": 40,
+            "Speed": 0.8,
+            "weight": 9,
+            "Effects": "None",
+            "Category": "Swords"
+        },
+        {
+            "name": "Obsidian Claymore",
+            "type": "Two-Handed",
+            "damage": 45,
+            "Speed": 0.7,
+            "weight": 10,
+            "Effects": "Bleeding",
+            "Category": "Swords"
+        },
+        {
+            "name": "Ancient Greatsword",
+            "type": "Two-Handed",
+            "damage": 50,
+            "Speed": 0.6,
+            "weight": 12,
+            "Effects": "Stun",
+            "Category": "Swords"
+        },
+        {
+            "name": "Silvered Sabre",
+            "type": "One-Handed",
+            "damage": 35,
+            "Speed": 0.9,
+            "weight": 7,
+            "Effects": "None",
+            "Category": "Swords"
+        },
+        {
+            "name": "Lightning Cleaver",
+            "type": "One-Handed",
+            "damage": 38,
+            "Speed": 0.8,
+            "weight": 8,
+            "Effects": "Electrified",
+            "Category": "Swords"
+        },
+        {
+            "name": "Jade Scimitar",
+            "type": "One-Handed",
+            "damage": 33,
+            "Speed": 0.9,
+            "weight": 7,
+            "Effects": "Poisoned",
+            "Category": "Swords"
+        },
+        {
+            "name": "Diamond Cutlass",
+            "type": "One-Handed",
+            "damage": 36,
+            "Speed": 0.9,
+            "weight": 7,
+            "Effects": "None",
+            "Category": "Swords"
+        },
+        {
+            "name": "Tempest Blade",
+            "type": "Two-Handed",
+            "damage": 48,
+            "Speed": 0.7,
+            "weight": 11,
+            "Effects": "Electrified, Knockback",
+            "Category": "Swords"
+        },
+        {
+            "name": "Ruby Bastard Sword",
+            "type": "Two-Handed",
+            "damage": 47,
+            "Speed": 0.7,
+            "weight": 11,
+            "Effects": "Burning",
+            "Category": "Swords"
+        },
+        {
+        "name": "Crimson Chakrams",
+        "type": "One-Handed",
+        "damage": 35,
+        "Speed": 1.0,
+        "weight": 5,
+        "Effects": "Burning",
+        "Category": "Chakrams"
+        },
+        {
+            "name": "Azure Chakrams",
+            "type": "One-Handed",
+            "damage": 30,
+            "Speed": 1.1,
+            "weight": 4,
+            "Effects": "Freezing",
+            "Category": "Chakrams"
+        },
+        {
+            "name": "Obsidian Chakrams",
+            "type": "One-Handed",
+            "damage": 40,
+            "Speed": 0.9,
+            "weight": 6,
+            "Effects": "None",
+            "Category": "Chakrams"
+        },
+        {
+            "name": "Storm Chakrams",
+            "type": "One-Handed",
+            "damage": 38,
+            "Speed": 1.0,
+            "weight": 5,
+            "Effects": "Electrified",
+            "Category": "Chakrams"
+        },
+        {
+            "name": "Golden Chakrams",
+            "type": "One-Handed",
+            "damage": 42,
+            "Speed": 0.8,
+            "weight": 7,
+            "Effects": "None",
+            "Category": "Chakrams"
+        },
+        {
+            "name": "Void Chakrams",
+            "type": "One-Handed",
+            "damage": 45,
+            "Speed": 0.7,
+            "weight": 8,
+            "Effects": "Bleeding",
+            "Category": "Chakrams"
+        },
+        {
+            "name": "Spectral Chakrams",
+            "type": "One-Handed",
+            "damage": 48,
+            "Speed": 0.6,
+            "weight": 9,
+            "Effects": "Scorched",
+            "Category": "Chakrams"
+        },
+        {
+            "name": "Infernal Chakrams",
+            "type": "One-Handed",
+            "damage": 50,
+            "Speed": 0.5,
+            "weight": 10,
+            "Effects": "Burning, Scorched",
+            "Category": "Chakrams"
+        },
+        {
+        "name": "Assassin's Dagger",
+        "type": "One-Handed",
+        "damage": 30,
+        "Speed": 1.2,
+        "weight": 3,
+        "Effects": "Poisoned",
+        "Category": "Daggers"
+        },
+        {
+            "name": "Frost Dagger",
+            "type": "One-Handed",
+            "damage": 25,
+            "Speed": 1.3,
+            "weight": 2,
+            "Effects": "Freezing",
+            "Category": "Daggers"
+        },
+        {
+            "name": "Shadow Dagger",
+            "type": "One-Handed",
+            "damage": 35,
+            "Speed": 1.1,
+            "weight": 4,
+            "Effects": "Concealed",
+            "Category": "Daggers"
+        },
+        {
+            "name": "Blood Dagger",
+            "type": "One-Handed",
+            "damage": 40,
+            "Speed": 1.0,
+            "weight": 5,
+            "Effects": "Bleeding",
+            "Category": "Daggers"
+        },
+        {
+            "name": "Viper's Fang",
+            "type": "One-Handed",
+            "damage": 45,
+            "Speed": 0.9,
+            "weight": 6,
+            "Effects": "Poisoned, Bleeding",
+            "Category": "Daggers"
+        },
+        {
+            "name": "Flintlock Pistol",
+            "type": "One-Handed",
+            "damage": 28,
+            "Speed": 1.0,
+            "weight": 4,
+            "Effects": "None",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Blunderbuss",
+            "type": "Two-Handed",
+            "damage": 35,
+            "Speed": 0.8,
+            "weight": 6,
+            "Effects": "Knockdown",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Musket",
+            "type": "Two-Handed",
+            "damage": 40,
+            "Speed": 0.7,
+            "weight": 7,
+            "Effects": "Piercing",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Hand Cannon",
+            "type": "Two-Handed",
+            "damage": 45,
+            "Speed": 0.6,
+            "weight": 8,
+            "Effects": "Explosive",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Repeater Pistol",
+            "type": "Two-Handed",
+            "damage": 30,
+            "Speed": 0.9,
+            "weight": 5,
+            "Effects": "Rapid Fire",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Dueling Pistol",
+            "type": "One-Handed",
+            "damage": 32,
+            "Speed": 0.9,
+            "weight": 5,
+            "Effects": "Precision",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Hand Mortar",
+            "type": "Two-Handed",
+            "damage": 50,
+            "Speed": 0.5,
+            "weight": 9,
+            "Effects": "Explosive, Knockdown",
+            "Category": "Pistols"
+        },
+        {
+            "name": "Travel Lantern",
+            "type": "One-Handed",
+            "damage": 10,
+            "Speed": 1.2,
+            "weight": 3,
+            "Effects": "Light",
+            "Category": "Lanterns"
+        },
+        {
+            "name": "Warm Lantern",
+            "type": "One-Handed",
+            "damage": 12,
+            "Speed": 1.1,
+            "weight": 4,
+            "Effects": "Light, Warm",
+            "Category": "Lanterns"
+        },
+        {
+            "name": "Soothing Lantern",
+            "type": "One-Handed",
+            "damage": 14,
+            "Speed": 1.0,
+            "weight": 5,
+            "Effects": "Light, Warm, Soothing",
+            "Category": "Lanterns"
+        },
+        {
+            "name": "Bright Lantern",
+            "type": "One-Handed",
+            "damage": 16,
+            "Speed": 0.9,
+            "weight": 6,
+            "Effects": "Light, Warm, Soothing, Bright",
+            "Category": "Lanterns"
+        },
+        {
+            "name": "Glowing Lantern",
+            "type": "One-Handed",
+            "damage": 18,
+            "Speed": 0.8,
+            "weight": 7,
+            "Effects": "Light, Warm, Soothing, Bright, Glowing",
+            "Category": "Lanterns"
+        },
+        {
+            "name": "Radiant Lantern",
+            "type": "One-Handed",
+            "damage": 20,
+            "Speed": 0.7,
+            "weight": 8,
+            "Effects": "Light, Warm, Soothing, Bright, Glowing, Radiant",
+            "Category": "Lanterns"
+        },
+        {
+            "name": "Arcane Tome",
+            "type": "Two-Handed",
+            "damage": 35,
+            "Speed": 0.7,
+            "weight": 10,
+            "Effects": "Arcane, Magic Bolt",
+            "Category": "Lexicons"
+        },
+        {
+            "name": "Mystical Codex",
+            "type": "Two-Handed",
+            "damage": 38,
+            "Speed": 0.65,
+            "weight": 11,
+            "Effects": "Arcane, Magic Bolt, Ethereal",
+            "Category": "Lexicons"
+        },
+        {
+            "name": "Enigmatic Scroll",
+            "type": "Two-Handed",
+            "damage": 40,
+            "Speed": 0.6,
+            "weight": 12,
+            "Effects": "Arcane, Magic Bolt, Ethereal, Enigmatic",
+            "Category": "Lexicons"
+        },
+        {
+            "name": "Arcane Grimoire",
+            "type": "Two-Handed",
+            "damage": 42,
+            "Speed": 0.6,
+            "weight": 13,
+            "Effects": "Arcane, Magic Bolt, Ethereal, Enigmatic, Glyph",
+            "Category": "Lexicons"
+        },
+        {
+            "name": "Celestial Codex",
+            "type": "Two-Handed",
+            "damage": 45,
+            "Speed": 0.55,
+            "weight": 14,
+            "Effects": "Arcane, Magic Bolt, Ethereal, Enigmatic, Glyph, Celestial",
+            "Category": "Lexicons"
+        },
+        {
+            "name": "Ethereal Grimoire",
+            "type": "Two-Handed",
+            "damage": 48,
+            "Speed": 0.5,
+            "weight": 15,
+            "Effects": "Arcane, Magic Bolt, Ethereal, Enigmatic, Glyph, Celestial, Ethereal",
+            "Category": "Lexicons"
+        },
+        {
+            "name": "Sorcerer's Scroll",
+            "type": "Two-Handed",
+            "damage": 50,
+            "Speed": 0.5,
+            "weight": 16,
+            "Effects": "Arcane, Magic Bolt, Ethereal, Enigmatic, Glyph, Celestial, Ethereal, Sorcerer's",
+            "Category": "Lexicons"
+        },
+        {
+        "name": "Steel Kite Shield",
+        "type": "One-Handed",
+        "armor": 25,
+        "impactResistance": 20,
+        "weight": 12,
+        "Effects": "None",
+        "Category": "Shields"
+        },
+        {
+            "name": "Iron Tower Shield",
+            "type": "Two-Handed",
+            "armor": 30,
+            "impactResistance": 25,
+            "weight": 18,
+            "Effects": "None",
+            "Category": "Shields"
+        },
+        {
+            "name": "Wooden Round Shield",
+            "type": "One-Handed",
+            "armor": 20,
+            "impactResistance": 15,
+            "weight": 10,
+            "Effects": "None",
+            "Category": "Shields"
+        },
+        {
+            "name": "Bronze Buckler",
+            "type": "One-Handed",
+            "armor": 22,
+            "impactResistance": 18,
+            "weight": 11,
+            "Effects": "None",
+            "Category": "Shields"
+        },
+        {
+            "name": "Ancient Greatshield",
+            "type": "Two-Handed",
+            "armor": 35,
+            "impactResistance": 30,
+            "weight": 20,
+            "Effects": "None",
+            "Category": "Shields"
+        },
+        {
+            "name": "Obsidian Shield",
+            "type": "One-Handed",
+            "armor": 28,
+            "impactResistance": 22,
+            "weight": 13,
+            "Effects": "None",
+            "Category": "Shields"
+        },
+        {
+            "name": "Silvered Round Shield",
+            "type": "One-Handed",
+            "armor": 26,
+            "impactResistance": 21,
+            "weight": 12,
+            "Effects": "None",
+            "Category": "Shields"
+        },
+        {
+            "name": "Fortified Wooden Shield",
+            "type": "One-Handed",
+            "armor": 24,
+            "impactResistance": 19,
+            "weight": 11,
+            "Effects": "None",
+            "Category": "Shields"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+.trainers{
+    margin: 100px auto 0;
+    padding-top: 5%;
+    color: white;
+}
+
+.trainer-image{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    object-fit: contain;
+}
+
+.trainer-image img{
+    max-width: 100%;
+    height: auto; 
+}
+
+#skillsDiv{
+    animation-duration: 15s;
+    animation-delay: 2s;
+}
+
+.skills{
+    color: aliceblue;
+}
+
+/* .skill-image{
+    width: 70px;
+    height: 84px;
+}
+ */
+
+ .skill{
+    overflow:hidden ;
+ }
+
+.skill-image img{
+    width: 70px;
+    height: 84px;
+}
+
+.skill-title{
+    background-color: rgb(51, 51, 51);
+}
+
+.social
+{
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    padding: 50px 30px;
+    background-color: rgb(39, 37, 37);
+    justify-content: space-between;
+    
+    
+}
+.copyright
+{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social-apps
+{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.social-apps i
+{
+    font-size: 2.3rem;
+    color: rgb(45, 45, 156);
+}
+

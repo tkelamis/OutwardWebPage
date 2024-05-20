@@ -1,0 +1,158 @@
+{
+    "name":"consumables",
+    "description":"Consumables play a vital role in managing your character’s health, stamina, and mana, as well as providing temporary boosts and curing ailments.",
+    "items": [
+        {
+            "Name": "Able Tea",
+            "Thirst": "7%",
+            "Hunger": "-",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Restores 20 burnt Health and Stamina, Cures Infection"
+        },
+        {
+            "Name": "Alpha Jerky",
+            "Thirst": "-",
+            "Hunger": "10%",
+            "Durability": "14 Days 21 Hours",
+            "Weight": 0.5,
+            "Effects": "Health Recovery 3, Rage"
+        },
+        {
+            "Name": "Astral Potion",
+            "Thirst": "9%",
+            "Hunger": "-",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Restores 50% Mana, Restores 20 Burnt Mana"
+        },
+        {
+            "Name": "Bitter Spicy Tea",
+            "Thirst": "15%",
+            "Hunger": "-",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Protection 15%, Stamina Recovery +20%, Burn Resistance"
+        },
+        {
+            "Name": "Blue Sand Tincture",
+            "Thirst": "10%",
+            "Hunger": "-",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Increases movement speed and makes you invisible to ghosts"
+        },
+        {
+            "Name": "Cool Potion",
+            "Thirst": "5%",
+            "Hunger": "-",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Cold Weather Def., Prevents dehydration"
+        },
+        {
+            "Name": "Pungent Paste",
+            "Thirst": "-",
+            "Hunger": "12%",
+            "Durability": "7 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +50%, Boosts health regen."
+        },
+        {
+            "Name": "Marinated Mushroom",
+            "Thirst": "-",
+            "Hunger": "15%",
+            "Durability": "7 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +40%, Disease Immunity"
+        },
+        {
+            "Name": "Lavender Calea",
+            "Thirst": "-",
+            "Hunger": "10%",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Provides Stamina recovery and buffs your Mana regeneration"
+        },
+        {
+            "Name": "Elattaria",
+            "Thirst": "-",
+            "Hunger": "15%",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Boosts Stamina Regen., reduces Fatigue buildup"
+        },
+        {
+            "Name": "Grilled Marshmelon",
+            "Thirst": "5%",
+            "Hunger": "20%",
+            "Durability": "3 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +50%, Replenishes Health"
+        },
+        {
+            "Name": "Nutritious Egg",
+            "Thirst": "-",
+            "Hunger": "15%",
+            "Durability": "5 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +40%, Restores Health and Stamina"
+        },
+        {
+            "Name": "Fortifying Stew",
+            "Thirst": "-",
+            "Hunger": "20%",
+            "Durability": "7 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +70%, Increases Max Health and Max Stamina"
+        },
+        {
+            "Name": "Mole Jerky",
+            "Thirst": "-",
+            "Hunger": "15%",
+            "Durability": "14 Days 21 Hours",
+            "Weight": 0.5,
+            "Effects": "Satiates +40%, Regenerate Stamina while running"
+        },
+        {
+            "Name": "Bread of the Wild",
+            "Thirst": "-",
+            "Hunger": "15%",
+            "Durability": "7 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +40%, Health Recovery 4"
+        },
+        {
+            "Name": "Milkfish Kebab",
+            "Thirst": "-",
+            "Hunger": "20%",
+            "Durability": "3 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +60%, Stamina Recovery +3, Health Recovery 4"
+        },
+        {
+            "Name": "Bitter Spicy Tea",
+            "Thirst": "15%",
+            "Hunger": "-",
+            "Durability": "Infinite",
+            "Weight": 0.5,
+            "Effects": "Protection 15%, Stamina Recovery +20%, Burn Resistance"
+        },
+        {
+            "Name": "Fruit Tartine",
+            "Thirst": "-",
+            "Hunger": "10%",
+            "Durability": "7 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +40%, Increases Movement Speed"
+        },
+        {
+            "Name": "Shrimp Cocktail",
+            "Thirst": "5%",
+            "Hunger": "20%",
+            "Durability": "3 Days",
+            "Weight": 0.5,
+            "Effects": "Satiates +60%, Stamina Recovery +3, Health Recovery 4"
+        }
+    ]
+}

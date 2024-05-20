@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_container{
+    font-family: 'Quicksand', sans-serif;
+    /* overflow: hidden; */
+    background-image: url(/Outward-WebPage/Images/general_Images/Outward-landscape2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+a{
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(163, 159, 159);
+  }
+
+.red-bg{
+    background-color: red;
+    color: white;
+}
+.black-bg{
+    background-color: black;
+    color: white;
+}
+
+.roboto-normal{
+    font-family: 'Roboto Slab', serif;
+}
+
+.roboto-light{
+    font-family: 'Roboto Slab', serif;
+    color:rgb(218, 215, 215);
+}
+
+.hidden{
+    display: none;
+}
+
+.letter-space-4px{
+    letter-spacing: 4px;
+}
+
+
+.header{
+    height: 80px;
+    z-index:100;
+    box-shadow: 0px 4px 8px black;
+    background-color: #311d47;
+    position: fixed;
+}
+
+.header li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+.menu-logo-image{
+    width: 340px;
+    cursor: pointer;
+}
+
+.logo-image{
+    width: 340px;
+}
+
+
+.nav-menu{
+    width: 60%;
+    height: 80px;
+}
+
+.nav-menu > ul > li:hover > ul{
+    display: block;
+}
+
+.nav-menu > ul > li{
+    position: relative;
+}
+
+.nav-menu > ul ul
+{
+    display: none;
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color:#311d47;
+    box-shadow: 0px 4px 8px black;
+}
+
+.nav-menu li li:first-child
+{
+    padding-top: 20px;
+}
+
+.nav-menu li li
+{
+    padding: 15px;
+}
+
+.nav-menu li li:hover
+{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(138, 136, 136);
+    border-bottom: 1px solid rgb(138, 136, 136);
+    transition: all 0.3s ease;
+}
+
+.nav-menu a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(204, 202, 202);
+}
+
+.button-small-screen{
+    text-align: right;
+    font-size: 30px;
+    padding-right: 30px; 
+}
+
+.modal-dialog{
+    margin: 0;
+}
+
+.modal-content{
+    background-color: #311d47;
+    border-bottom: none;
+    border-top: none;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header,.modal-footer {
+    border-bottom: none;
+    border-top: none;
+}
+
+.modal-header .btn-close{
+    font-size: 20px;
+}
+
+.modal-header img{
+    height: 70%;
+    width: 70%;
+}
+
+.modal-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.modal-menu li li a:hover{
+    text-decoration:underline;
+}
+
+.main{
+    margin-top: 80px;
+    color: white;
+}
+
+.welcoming-message{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    gap: 3rem;
+}
+
+.versionOfTheGame{
+    
+    flex-wrap: wrap;
+}
+
+.version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
+    width: 194px;
+    height: 259px;
+}
+
+.versionOfTheGame img{
+    width: 194px;
+    height: 259px;
+}
+
+.information-definitiveEdition, .information-Soroboreans, .information-TheThreeBrothers{
+    background-color: #311d47;
+    border-radius: 45px;
+    margin-bottom: 40px;
+    padding: 20px 20px;
+    text-align: center;
+
+}
+
+.edition-title{
+    border: 2px solid white;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.main-text
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+    background-color: #41275c;
+}
+
+.main-text > h2{
+    padding-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+.main-text-Subtitle
+{
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.social
+{
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    padding: 50px 30px;
+    background-color: rgb(39, 37, 37);
+    justify-content: space-between;
+    gap: 3rem;
+}
+.copyright
+{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social-apps
+{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.social-apps i
+{
+    font-size: 2.3rem;
+    color: rgb(45, 45, 156);
+}
+
+
+
+.accordion-button {
+    --bs-accordion-btn-bg: #41275c;
+    --bs-accordion-active-bg: #41275c;
+    --bs-accordion-bg: #41275c;
+}
+
+.accordion-item {
+    background-color: #41275c;
+}
+
+.accordion {
+    /* --bs-accordion-border-color: #f8f9fa; */
+    /* color: #f8f9fa; */
+    --bs-accordion-btn-focus-box-shadow: #f8f9fa;
+    /* --bs-accordion-active-color: #f0f0f0; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.accordion p{
+    font-size: 16px;
+}
+
+.accordion-body{
+    color: #f8f9fa;
+}
+
+/* .accordion-button:not(.collapsed) {
+    color:#f8f9fa !important;
+} */
+
+.accordion-button:not(.collapsed) svg {
+    fill: #f8f9fa !important; /* Set color of caret icon to white when accordion is open */
+}
+
+.accordion-button.collapsed svg {
+    fill: #f8f9fa !important; /* Set color of caret icon to white when accordion is closed */
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    color: #f8f9fa !important; /* Set text color to white */
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .nav-menu{
+        display: none !important;
+    }
+
+    .header{
+        height: 61px;
+    }
+
+    .menu-logo-image{
+        width: 260px;
+    }
+    
+    .logo-image{
+        width: 260px;
+    }
+
+    .main-title p{
+        font-size: 20px;
+    }
+
+    .main-subtitle p{
+        font-size: 16px;
+    }
+
+    
+
+    .versions h3{
+        font-size: 20px;
+    }
+
+    .versions p{
+        font-size: 14px !important;
+    }
+    .story h2 {
+        font-size: 25px;
+    }
+    .story p{
+        font-size: 14px;
+    }
+    .social-apps{
+        font-size: 15px;
+    }
+    .social{
+        font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+
+.version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
+    transform: scale(0.9);
+}
+  }
+

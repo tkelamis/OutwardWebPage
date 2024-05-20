@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/Outward-WebPage/shared/javascript/loadHeader.js"></script>
+  <script src="/Outward-WebPage/shared/javascript/loadMenu-Button.js"></script>
+
+  <script src="locations.js" defer></script>
+  
+  <link rel="stylesheet" href="locations.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Outward-WebPage/shared/styles/header_footer.css">
+  <link rel="stylesheet" href="/Outward-WebPage/fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.6/css/dataTables.dataTables.css">
+  <script src="https://cdn.datatables.net/2.0.6/js/dataTables.js"></script>
+
+  <title>Outward Wikipedia</title>
+</head>
+<body>
+
+  <div id="menu-button-container"></div>
+
+  <div id="header-container"></div>
+
+  <div class="location" id="location">
+
+    <div class="location-carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" >
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/Outward-WebPage/Images/locations/Chersonese.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Chersonese</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Outward-WebPage/Images/locations/HallowedMarsh.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Hallowed Marsh</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Outward-WebPage/Images/locations/EnmerkarForest.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Enmerkar Forest.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Outward-WebPage/Images/locations/Abrassar.png" alt="Fourth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Abrassar</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Outward-WebPage/Images/locations/AntiquePlateau.png" alt="Fifth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Antique Plateau</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Outward-WebPage/Images/locations/Caldera.png" alt="Sixth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Caldera</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+      
+    <div class="location-chersonese-information col-lg-6 col-md-11 col-10" id="location-chersonese">
+
+      <div class="location-description" >
+        <p>
+          Chersonese is a Region in Outward. The main city of Chersonese is Cierzo. It is a mountainous, coastal region. Common enemies in this region include bandits,
+          pearlbirds, hyenas and mantis shrimp. The most notable landmarks being Conflux Mountain, the Vigil Pylon and the Lighthouse of Cierzo. It is a fairly cold region,
+          and can experience snow during Winter time. The region is abundant with gatherables, and the enemies are generally more forgiving than in other regions, making
+          it the perfect area for new players to make their start.
+        </p>
+      </div>
+      
+      <div class="location-weather">
+        <h5 style="font-weight: bold";>Weather</h5>
+        <p>
+          Chersonese has the most dynamic weather system of the four base-game regions, with a unique Snowing effect which occurs during Winter.
+        </p>
+        <h5 style="font-style: italic;">Autumn</h5>
+        <p>Daytime: +/- 0 (Neutral). Nighttime: -14 Cold (Fresh).</p>
+        <ul>
+          <li>A new character will begin in Autumn, and starts a few days into the season.</li>
+          <li>Rain is common in Autumn.</li>
+          <li>If you are leaving winter, snow will clear over the course of a few days.</li>
+        </ul>
+        <h5 style="font-style: italic;">Winter</h5>
+        <ul>
+          <li>The first Winter can occur as early as day 12, or as late as day 19.</li>
+          <li>It will begin to snow, greatly reducing the outdoor temperature.</li>
+        </ul>
+      </div>
+    
+      <div class="location-mainlocations">
+        <div><h5 style="font-weight: bold;">Major Locations</h2>
+          <ul>
+            <li>Cierzo (City)
+              <ul>
+              <li>Cierzo Storage</li>
+              <li>Cierzo (Destroyed)</li>
+              </ul>
+            </li>
+            <li>Conflux Mountain</li>
+            <li>Blue Chamber's Conflux Path</li>
+            <li>Heroic Kingdom's Conflux Path</li>
+            <li>Holy Mission's Conflux Path</li>
+            <li>Blister Burrow</li>
+            <li>Corrupted Tombs (marked as northern Ancient Ruins)</li>
+        
+            <li> Ghost Pass (marked as Fort)</li>
+            <li>Montcalm Clan Fort (marked as northern Bandit Camp)</li>
+            <li>Vendavel Fortress</li>
+            <li>Vigil Pylon</li>
+            <li> Voltaic Hatchery</li>
+          </ul>
+        </div>
+        
+        <div class="img-map"><img src="/Outward-WebPage/Images/locations/ChersoneseMap.png" alt="ChersoneseMap"></div>
+      </div>
+    
+    </div>
+
+    <div class="location-hallowedMarsh-information col-6" id="location-hallowedMarsh">
+
+      <div class="location-description" >
+        <p>
+          Hallowed Marsh is a Region in Outward, which houses the city of Monsoon, home of the Holy Mission.
+          It is a harsh, toxic environment strongly associated with the Decay element. With the exception of
+          the Light Mender's creations (Golden Minion / Specter), mostly all of the enemies in the Marsh are
+          resistant to the element. Common enemies in this region include various Marsh Bandits, Reptilian Wildlife, and Golems.
+        </p>
+      </div>
+      
+      <div class="location-weather">
+        <h5 style="font-weight: bold";>Weather</h2>
+        <p>
+          Daytime: +/- 0 (Neutral). Nighttime: -15 Cold (Fresh). Hallowed Marsh does not have dynamic seasons. It can Rain periodically in the Marsh.
+        </p>
+      </div>
+    
+      <div class="location-mainlocations">
+
+        <div><h5 style="font-weight: bold;">Major Locations</h2>
+
+          <ul>
+            <li>Monsoon (City)</li>
+            <li>Dark Ziggurat</li>
+            <li>Dead Roots (marked as western Huge Tree)</li>
+            <li>Dead Tree</li>
+            <li>Jade Quarry</li>
+            <li>Reptilian Lair (marked as central Huge Tree)</li>
+            <li>Spire of Light</li>
+            <li> Vigil Pylon (exterior location)</li>
+            <li>Ziggurat Passage</li>
+          </ul>
+        </div>
+        
+        <div class="img-map"><img src="/Outward-WebPage/Images/locations/HallowedMarshMap.png" alt="HallowedMarshMap"></div>
+      </div>
+    </div>
+
+    <div class="location-enmerkarForest-information col-6" id="location-enmerkarForest">
+
+      <div class="location-description" >
+        <p>
+          Enmerkar Forest is a region in Outward. The main town of Enmerkar Forest is Berg, which is the home of
+          the Blue Chamber Collective. Common enemies in this region include bandits, Coralhorns, Ghosts, and more.
+          The exterior area of Enmerkar Forest is mountainous and diverse. There are lush, green hillsides,
+          as well as charred and decrepit wastes. The area has a high population of Ghosts, compared to other regions,
+          and large portions of the area lay in ruins.
+        </p>
+      </div>
+      
+      <div class="location-weather">
+        <h5 style="font-weight: bold";>Weather</h2>
+        <p>
+          Enmerkar Forest has two seasons: a fair-weather season, and a foggy or Ancestral season which sees cooler weather and notably increased fog.
+        </p>
+        <h5 style="font-style: italic;">Spring / Autumn</h5>
+        <p>Daytime: +/- 0 (Neutral). Nighttime: -14 Cold (Fresh).</p>
+        <ul>
+          <li>The game begins in the normal season, which is Neutral in the daytime and Cold Fresh (-14) at night.</li>
+          <li>Rain is still fairly common during the normal season</li>
+        </ul>
+        <h5 style="font-style: italic;">Foggy</h5>
+        <ul>
+          <li>A foggy (or Ancestral) season begins after 15-20 days, which sees much lower daytime temperatures, and even colder night temperatures.</li>
+          <li>With the "Atmospheric Fog" graphical setting enabled, visual fog is greatly increased.</li>
+          <li>There are purple ghostly "clouds" which appear all throughout the exterior region</li>
+        </ul>
+      </div>
+    
+      <div class="location-mainlocations">
+        <div><h5 style="font-weight: bold;">Major Locations</h2>
+          <ul>
+            <li>Berg (City)</li>
+            <li>Necropolis</li>
+            <li>Ancestor's Resting Place (marked as Fort)</li>
+            <li>Cabal of Wind Temple</li>
+            <li>Face of The Ancients</li>
+            <li>Forest Hives (marked as Colossal Hive)</li>
+            <li>Royal Manticore's Lair</li>
+            <li> Vigil Pylon</li>
+          </ul></div>
+        
+        <div class="img-map"><img src="/Outward-WebPage/Images/locations/EnmerkarForestMap1.png" alt="ChersoneseMap"></div>
+      </div>
+    
+    </div>
+
+    <div class="location-abrassar-information col-6" id="location-abrassar">
+
+      <div class="location-description" >
+        <p>
+          Abrassar is a Region in Outward which houses the city of Levant, home of the Heroic Kingdom faction.
+          The temperature in the region is oppressively hot in the daytime and bitter cold at night, making it difficult to traverse.
+        </p>
+      </div>
+      
+      <div class="location-weather">
+        <h5 style="font-weight: bold";>Weather</h5>
+        <p>Daytime: +40 Hot (Very Hot / Hottest). Nighttime: -20 Cold (Cold). Abrassar does not have dynamic seasons.</p>
+        <ul>
+          <li>Trees and Water Sources are sparse in Abrassar, so it is recommended to come well prepared to deal with the weather.</li>
+          <li>Rain is common in Autumn.</li>
+          <li>It does not rain in Abrassar, unlike all other regions.</li>
+        </ul>
+      </div>
+    
+      <div class="location-mainlocations">
+        <div><h5 style="font-weight: bold;">Major Locations</h2>
+          <ul>
+            <li>Levant (City)
+              <ul>
+              <li>Slums</li>
+              </ul>
+            </li>
+            <li>Ancient Hive (marked as Colossal Hive)</li>
+            <li>Electric Lab (marked as Fort)</li>
+            <li>Ruins of Old Levant</li>
+            <li>Sand Rose Cave</li>
+            <li>Stone Titan Caves</li>
+            <li>The Walled Garden</li>
+        
+            <li> The Slide</li>
+            <li>Undercity Passage</li>
+          </ul>
+        </div>
+        
+        <div class="img-map"><img src="/Outward-WebPage/Images/locations/AbrassarMap.png" alt="AbrassarMap"></div>
+      </div>
+    
+    </div>
+
+    <div class="location-antiquePlateau-information col-6" id="location-antiquePlateau">
+
+      <div class="location-description" >
+        <p>
+          The Antique Plateau is a region in Outward, home of the Sorobor Academy faction.
+          The main city of Antique Plateau is Harmattan. This region is exclusive to The Soroboreans DLC.
+        </p>
+      </div>
+      
+      <div class="location-weather">
+        <h5 style="font-weight: bold";>Weather</h5>
+        <p>Antique Plateau has dynamic weather, with a climate similar to Chersonese.</p>
+        <p>Daytime: +/- 0 (Neutral). Nighttime: -14 Cold (Fresh)</p>
+        <ul>
+          <li>A new character will begin in Autumn, and starts a few days into the season.</li>
+          <li>Rain is common in Autumn.</li>
+          <li>If you are leaving winter, snow will clear over the course of a few days.</li>
+        </ul>
+      </div>
+    
+      <div class="location-mainlocations">
+        <div><h5 style="font-weight: bold;">Major Locations</h2>
+          <ul>
+            <li>Harmattan</li>
+            <li>Abandoned Living Quarters (marked as Ancient Bunker)</li>
+            <li>Forgotten Research Laboratory</li>
+            <li>Ancient Foundry (marked as Ruined Hippodrome)</li>
+            <li>Ruined Warehouse (marked as Sealed Warehouse)</li>
+            <li>Lost Golem Manufacturing Facility</li>
+            <li>Crumbling Loading Docks (marked as Vigil Pylon)</li>
+        
+            <li> Destroyed Test Chambers</li>
+            <li>Compromised Mana Transfer Station (marked as Abandoned Fortress)</li>
+            <li>Old Harmattan</li>
+          </ul>
+        </div>
+        
+        <div class="img-map"><img src="/Outward-WebPage/Images/locations/AntiquePlateauMap.png" alt="AntiquePlateauMap"></div>
+      </div>
+    
+    </div>
+
+    <div class="location-caldera-information col-6" id="location-caldera">
+
+      <div class="location-description" >
+        <p>
+          Caldera is a region in Outward. The main city of Caldera was Old Sirocco, but with
+          the aid of the player New Sirocco becomes the region's main city. This region is exclusive to The Three Brothers DLC.
+        </p>
+      </div>
+      
+      <div class="location-weather">
+        <h5 style="font-weight: bold";>Weather</h5>
+        <p>
+          The region has a Hot Hot climate similar to Abrassar, and does not have dynamic seasons. It can occasionally rain in New Sirocco.
+        </p>
+      </div>
+    
+      <div class="location-mainlocations">
+        <div><h5 style="font-weight: bold;">Major Locations</h2>
+          <ul>
+            <li>New Sirocco (City)
+              <ul>
+              <li>New Sirocco Mines</li>
+              </ul>
+            </li>
+            <li>Ark of the Exiled</li>
+            <li>Myrmitaur's Haven (marked as Myrmitaur's Hives)</li>
+            <li>Oil Refinery</li>
+            <li>Old Sirocco
+              <ul>
+                <li>The Eldest Brother</li>
+                </ul>
+            </li>
+            <li>Scarlet Sanctuary (marked as Smouldering Crater)</li>
+            <li>Steam Bath Tunnels</li>
+            <li> Sulphuric Caverns (marked as Sulphuric Chimneys)</li>
+            <li>The Grotto of Chalcedony</li>
+            <li>The Vault of Stone</li>
+          </ul>
+        </div>
+        
+        <div class="img-map"><img src="/Outward-WebPage/Images/locations/CalderaMap.png" alt="CalderaMap"></div>
+      </div>
+    
+    </div>
+</div>
+
+  <div class="social" id="social">
+    <div class="copyright">
+        Wikipedia is a registered trademark of the Wikipedia
+    </div>
+    <div class="social-apps">
+        You can contact with us in 
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+     
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+.new-div-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 5%;
+    margin: 80px auto;
+    color: aliceblue;
+}
+
+.imgAndTitleDivContainer{
+display: flex;
+text-align: center;
+justify-content: center;
+gap: 0.5rem;
+flex-wrap: wrap;
+}
+
+
+.categoryAndDescription{
+    margin: 0 auto;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.category-imgAndTitleDiv{
+    width: 84px;
+    border: 2px solid black;
+}
+.category-image{
+    width: 84px;
+    height: 128px;
+    border: 2px solid black;
+}
+
+.hover:hover{
+    box-shadow: grey 0px 0px 20px;
+}
+
+.dt-container{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #41275c;
+    padding: 20px;
+    width: 100%;
+    overflow-x: auto; 
+    margin-bottom: 5%;
+}
+
+.dataTable{
+    width: 100% !important;
+}
