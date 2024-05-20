@@ -226,4 +226,15 @@ body{
     .social{
         font-size: 15px;
     }
+    
+
+    .skill-tree-image{
+        width: 270.9px;
+        height: 331.1;
+    }
+    
+    .skill-tree-image img{
+        width: 100%;
+        height: 100%;
+    }
   }

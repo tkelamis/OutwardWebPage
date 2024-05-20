@@ -200,6 +200,7 @@ a:hover {
 .versionOfTheGame{
     
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
@@ -372,8 +373,11 @@ a:hover {
 
   @media only screen and (max-width: 768px) {
 
+
+    
 .version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
-    transform: scale(0.9);
+    transform: scale(0.7);
+    gap: 0;
 }
   }
 

@@ -29,7 +29,7 @@ function renderTrainers()
 {
     for (let trainer of data) {
         $('<div>', { 
-            class: 'trainer-attributes d-flex flex-column gap-2 p-3 rounded-3 bg-black align-items-center',
+            class: 'trainer-attributes d-flex flex-column gap-2 p-2 rounded-3 align-items-center',
             css: { cursor: 'pointer' }
         })
         .append(
@@ -81,12 +81,15 @@ function createSkills(trainer)
 {
     let newSkillsDiv = $('<div>',{id:'skillsDiv',class:'skills pb-5 pt-5'}).insertBefore('#social');
 
-    $('<div>',{class:'skill-tree-image text-center p-4'}).append(
+    $('<div>',{class:'skill-tree-image mx-auto p-4'}).append(
         $('<img>',{ src: `../../Images/skills/${trainer.title}_Tree.png` })).appendTo(newSkillsDiv);
+
+    $('<div>',{class:'all-skills d-flex mx-auto col-8'}).appendTo(newSkillsDiv);
+    
 
     for (let skill of trainer.skills)
     {
-        let skillDiv = $('<div>',{class:'skill-list d-flex flex-column mx-auto bg-black mt-3 p-3 rounded-4 col-8'}).appendTo(newSkillsDiv);
+        let skillDiv = $('<div>',{class:'skill-list d-flex flex-column mx-auto mt-3 p-3 rounded-4'}).appendTo(newSkillsDiv);
         
         $('<div>', { class: 'skill' }).append(
             $('<h4>', { class: 'skill-title rounded-3 p-2', text: skill.Name }),
@@ -106,6 +109,7 @@ function createSkills(trainer)
                 )
             )
         ).appendTo(skillDiv);
+        $(skillDiv).appendTo($('.all-skills'));
     }
     newSkillsDiv.hide().fadeIn(900);
 }

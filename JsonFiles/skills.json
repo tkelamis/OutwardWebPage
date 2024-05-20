@@ -67,37 +67,126 @@
         "title": "Kazite Spellblade",
         "name": "EtoAkiyuki",
         "location": "Chersonese",
-        "TreeImageUrl": "../Images/skills/Kazite_Spellblade_Tree.png",
         "skills": [
             {
-                "Trainer":"Kazite Spellblade",
                 "Name": "Steady Arm",
-                "SkillsTreeImageUrl": "",
-                "SkillImageUrl": "",
+                "CoinsCost": "60 Coins",
+                "SourceCost": "6 mana",
+                "CoolDown": "12 seconds",
+                "Description": "Temporarily increase your accuracy and stability in combat, enhancing your chances of hitting your target."
+              },
+              {
+                "Name": "Shield Charge",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Charge forward with your shield raised, knocking back enemies in your path and inflicting damage upon impact."
+              },
+              {
+                "Name": "Fitness",
+                "CoinsCost": "50 Coins",
+                "SourceCost": "5 mana",
+                "CoolDown": "10 seconds",
+                "Description": "Improve your physical fitness, increasing your stamina and reducing the time it takes to recover from exhaustion."
+              },
+              {
+                "Name": "Spellblade's Awakening",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "25 seconds",
+                "Description": "Channel your magical energies into your weapon, imbuing it with elemental power and enhancing its damage for a limited time."
+              },
+              {
+                "Name": "Infuse Fire",
                 "CoinsCost": "80 Coins",
                 "SourceCost": "8 mana",
                 "CoolDown": "15 seconds",
-                "Description": "Increase stability, reducing the impact of attacks."
-            },
-            {
-                "Trainer":"Kazite Spellblade",
-                "Name": "Shield Charge",
-                "SkillsTreeImageUrl": "",
-                "SkillImageUrl": "",
-                "CoinsCost": "120 Coins",
-                "SourceCost": "12 mana",
-                "CoolDown": "20 seconds",
-                "Description": "Charge forward with your shield raised to knock down enemies."
-            }
-                
+                "Description": "Infuse your attacks with the power of fire, causing additional fire damage to enemies with each strike."
+              },
+              {
+                "Name": "Infuse Frost",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Infuse your attacks with the chilling power of frost, slowing down enemies with each strike and reducing their movement speed."
+              },
+              {
+                "Name": "Gong Strike",
+                "CoinsCost": "90 Coins",
+                "SourceCost": "9 mana",
+                "CoolDown": "18 seconds",
+                "Description": "Unleash a powerful strike with your weapon, creating a shockwave that damages and knocks down nearby enemies."
+              },
+              {
+                "Name": "Elemental Discharge",
+                "CoinsCost": "150 Coins",
+                "SourceCost": "15 mana",
+                "CoolDown": "30 seconds",
+                "Description": "Release a burst of elemental energy, damaging all enemies in the area and applying elemental effects based on your weapon's imbued element."
+              } 
         ]
     },
     {
         "title": "Mercenary",
         "name": "Jaimon",
         "location": "Levant",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
         "skills": [
+            {
+                "Name": "Shatter Bullet",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Fire a bullet infused with freezing energy, shattering upon impact to deal damage and apply a freezing effect to the target."
+              },
+              {
+                "Name": "Frost Bullet",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Fire a bullet imbued with frost magic, chilling enemies and slowing their movement speed upon impact."
+              },
+              {
+                "Name": "Fast Maintenance",
+                "CoinsCost": "50 Coins",
+                "SourceCost": "5 mana",
+                "CoolDown": "10 seconds",
+                "Description": "Quickly perform maintenance on your equipment, reducing the time it takes to repair and reload your weapons."
+              },
+              {
+                "Name": "Marathoner",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Improve your endurance and running speed, allowing you to cover greater distances without tiring as quickly."
+              },
+              {
+                "Name": "Swift Foot",
+                "CoinsCost": "60 Coins",
+                "SourceCost": "6 mana",
+                "CoolDown": "12 seconds",
+                "Description": "Temporarily increase your movement speed, allowing you to dart around the battlefield with increased agility."
+              },
+              {
+                "Name": "Armor Training",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "25 seconds",
+                "Description": "Train in the art of wearing heavy armor, increasing your defense and reducing the penalties associated with wearing heavy gear."
+              },
+              {
+                "Name": "Shield Infusion",
+                "CoinsCost": "90 Coins",
+                "SourceCost": "9 mana",
+                "CoolDown": "18 seconds",
+                "Description": "Channel magic into your shield, imbuing it with elemental power and enhancing its defensive capabilities against specific types of attacks."
+              },
+              {
+                "Name": "Blood Bullet",
+                "CoinsCost": "150 Coins",
+                "SourceCost": "15 mana",
+                "CoolDown": "30 seconds",
+                "Description": "Fire a bullet infused with your own life force, sacrificing health to deal additional damage to enemies upon impact."
+              }
         ]
     },
     {
@@ -106,14 +195,62 @@
         "location": "Monsoon",
         "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
         "skills": [
-        ]
-    },
-    {
-        "title": "Rogue Engineer",
-        "name": "Styx",
-        "location": "Levant",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
+            {
+                "Name": "Chakram Pierce",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Throw a chakram in a straight line, piercing through enemies and dealing damage to all targets in its path."
+              },
+              {
+                "Name": "Chakram Arc",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "25 seconds",
+                "Description": "Send a chakram spinning in a wide arc, damaging enemies in a frontal area and knocking them back."
+              },
+              {
+                "Name": "Sigil of Fire",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Place a magical sigil infused with fire energy on the ground, creating a fiery explosion when triggered by an enemy's presence."
+              },
+              {
+                "Name": "Mana Ward",
+                "CoinsCost": "90 Coins",
+                "SourceCost": "9 mana",
+                "CoolDown": "18 seconds",
+                "Description": "Create a protective barrier of mana around yourself, reducing incoming damage for a short duration."
+              },
+              {
+                "Name": "Leyline Connection",
+                "CoinsCost": "60 Coins",
+                "SourceCost": "6 mana",
+                "CoolDown": "12 seconds",
+                "Description": "Establish a connection to the leyline, channeling its energy to rapidly regenerate your mana reserves."
+              },
+              {
+                "Name": "Chakram Dance",
+                "CoinsCost": "150 Coins",
+                "SourceCost": "15 mana",
+                "CoolDown": "30 seconds",
+                "Description": "Perform a mesmerizing dance with your chakrams, unleashing a flurry of rapid attacks on all nearby enemies."
+              },
+              {
+                "Name": "Sigil of Ice",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Place a magical sigil infused with ice energy on the ground, freezing enemies in its radius and slowing their movement speed."
+              },
+              {
+                "Name": "Fire Affinity",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Enhance your affinity with fire magic, increasing the potency and effectiveness of your fire-based abilities."
+              }
         ]
     },
     {
@@ -122,22 +259,62 @@
         "location": "Berg",
         "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
         "skills": [
-        ]
-    },
-    {
-        "title": "Mercenary",
-        "name": "Jaimon",
-        "location": "Levant",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
-        ]
-    },
-    {
-        "title": "Warrior Monk",
-        "name": "Galira",
-        "location": "Monsoon",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
+            {
+                "Name": "Dez",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Blue rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order."
+              },
+              {
+                "Name": "Egoth",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Purple rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order."
+              },
+              {
+                "Name": "Fal",
+                "CoinsCost": "60 Coins",
+                "SourceCost": "6 mana",
+                "CoolDown": "12 seconds",
+                "Description": "Green rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order."
+              },
+              {
+                "Name": "Shim",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "25 seconds",
+                "Description": "Red rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order."
+              },
+              {
+                "Name": "Well of Mana",
+                "CoinsCost": "90 Coins",
+                "SourceCost": "9 mana",
+                "CoolDown": "18 seconds",
+                "Description": "Create a magical wellspring that restores mana to you and nearby allies over time, replenishing their magical reserves."
+              },
+              {
+                "Name": "Arcane Syntax",
+                "CoinsCost": "150 Coins",
+                "SourceCost": "15 mana",
+                "CoolDown": "30 seconds",
+                "Description": "Unleash a barrage of arcane symbols, damaging enemies in a wide area and disrupting their magical abilities."
+              },
+              {
+                "Name": "Internalized Lexicon",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Draw upon the knowledge stored within your mind, enhancing your spellcasting abilities and reducing mana costs for a short duration."
+              },
+              {
+                "Name": "Runic Prefix",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Imbue your weapons with runic magic, enhancing their effectiveness against magical and ethereal foes."
+              }
         ]
     },
     {
@@ -146,46 +323,62 @@
         "location": "Berg",
         "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
         "skills": [
-        ]
-    },
-    {
-        "title": "Hex Mage",
-        "name": "Ella Lockwell",
-        "location": "Harmattan",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
-        ]
-    },
-    {
-        "title": "The Speedster",
-        "name": "Serge",
-        "location": "Harmattan",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
-        ]
-    },
-    {
-        "title": "Primal Ritualist",
-        "name": "Sinai",
-        "location": "Ritualist's hut",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
-        ]
-    },
-    {
-        "title": "Weapon Master",
-        "name": "Bea Battleborn",
-        "location": "New Sirocco",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
-        ]
-    },
-    {
-        "title": "Specialist",
-        "name": "Justin Garnet",
-        "location": "New Sirocco",
-        "TreeImageUrl": "/Outward-WebPage/Images/skills/Cabal_Hermit_Tree.png",
-        "skills": [
+            {
+                "Name": "Enrage",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Enter a state of berserker rage, temporarily increasing your damage output and attack speed at the cost of reduced defense."
+              },
+              {
+                "Name": "Evasion Shot",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Fire a precise shot while evading enemy attacks, allowing you to maintain your offensive pressure while avoiding danger."
+              },
+              {
+                "Name": "Hunter's Eye",
+                "CoinsCost": "60 Coins",
+                "SourceCost": "6 mana",
+                "CoolDown": "12 seconds",
+                "Description": "Activate your keen senses, enhancing your perception of your surroundings and revealing hidden enemies or traps."
+              },
+              {
+                "Name": "Sniper Shot",
+                "CoinsCost": "120 Coins",
+                "SourceCost": "12 mana",
+                "CoolDown": "25 seconds",
+                "Description": "Take careful aim and unleash a powerful shot, dealing massive damage to a single target from a long range."
+              },
+              {
+                "Name": "Survivor's Resilience",
+                "CoinsCost": "90 Coins",
+                "SourceCost": "9 mana",
+                "CoolDown": "18 seconds",
+                "Description": "Tap into your inner resilience, reducing incoming damage and negating harmful status effects for a short duration."
+              },
+              {
+                "Name": "Predator Leap",
+                "CoinsCost": "150 Coins",
+                "SourceCost": "15 mana",
+                "CoolDown": "30 seconds",
+                "Description": "Leap forward with feral agility, closing the distance to your prey and stunning them upon impact with a powerful attack."
+              },
+              {
+                "Name": "Piercing Shot",
+                "CoinsCost": "80 Coins",
+                "SourceCost": "8 mana",
+                "CoolDown": "15 seconds",
+                "Description": "Fire a projectile that pierces through multiple enemies, dealing damage to all targets in its path."
+              },
+              {
+                "Name": "Feral Strikes",
+                "CoinsCost": "100 Coins",
+                "SourceCost": "10 mana",
+                "CoolDown": "20 seconds",
+                "Description": "Unleash a series of ferocious strikes, tearing through enemy defenses and inflicting bleeding wounds upon your foes."
+              }
         ]
     }
 ]
