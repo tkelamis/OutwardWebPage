@@ -92,7 +92,7 @@ function createSkills(trainer)
             $('<h4>', { class: 'skill-title rounded-3 p-2', text: skill.Name }),
             $('<div>', { class: 'skill-image-cost-description d-flex pt-3 gap-4' }).append(
                 $('<div>', { class: 'skill-image' }).append(
-                    $('<img>', { src: `/Outward-WebPage/Images/skills/${skill.Name}.png` })
+                    $('<img>', { src: `../../Images/skills/${skill.Name}.png` })
                 ),
                 $('<div>', { class: 'skill-cost-description' }).append(
                     $('<div>', { class: 'skill-cost d-flex gap-4' }).append(

@@ -1,6 +1,6 @@
 function loadMenu_Button() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', '../components/button-menu.html', true);
+    xhr.open('GET', '../../shared/components/button-menu.html', true);
     xhr.onreadystatechange = function() {
     if (xhr.readyState === 4)
     {
