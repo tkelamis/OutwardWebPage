@@ -369,6 +369,7 @@ a:hover {
         background-position: center;
         background-size: 2880px 1215px;
         background-attachment:fixed;
+        min-height: 140vh;
     }
 }
 
