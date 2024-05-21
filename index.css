@@ -10,12 +10,6 @@
     padding: 0;
 }
 
-body { 
-height: 100%;
-overscroll-behavior: none; 
-
-}
-
 .main_container{
     font-family: 'Quicksand', sans-serif;
     background-image: url(./Images/general_Images/Outward-landscape2.png);
@@ -26,8 +20,10 @@ overscroll-behavior: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 80px); /* Ensure content height accounts for header */
-    overscroll-behavior: none;
+    /* min-height: 100vh; */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 a{
