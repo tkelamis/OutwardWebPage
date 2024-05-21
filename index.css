@@ -12,7 +12,6 @@
 
 .main_container{
     font-family: 'Quicksand', sans-serif;
-    /* overflow: hidden; */
     background-image: url(./Images/general_Images/Outward-landscape2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +19,7 @@
     background-attachment:fixed;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +60,6 @@ a:hover {
     letter-spacing: 4px;
 }
 
-
 .header{
     height: 80px;
     z-index:100;
@@ -75,8 +73,6 @@ a:hover {
     list-style-type: none;
 }
 
-
-
 .menu-logo-image{
     width: 340px;
     cursor: pointer;
@@ -85,7 +81,6 @@ a:hover {
 .logo-image{
     width: 340px;
 }
-
 
 .nav-menu{
     width: 60%;
@@ -126,7 +121,6 @@ a:hover {
 
 .nav-menu li li:hover
 {
-    padding: 15px;
     color: rgb(255, 255, 255);
     border-top: 1px solid rgb(138, 136, 136);
     border-bottom: 1px solid rgb(138, 136, 136);
@@ -177,9 +171,20 @@ a:hover {
     width: 70%;
 }
 
-.modal-menu a{
+.modal-menu{
+    width: 180px;
+}
+
+.modal-menu a, .modal-menu p{
     text-decoration: none;
     color: white;
+    font-size: 19px;
+    margin-bottom: 0;
+}
+
+.modal-menu a:hover{
+    letter-spacing: 1px;
+    transition: letter-spacing 0.3s ease;
 }
 
 .modal-menu li li a:hover{
@@ -190,14 +195,15 @@ a:hover {
 .modal-menu ul ul {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 10px;
 }
 
 .modal-menu li {
     padding-left: 1rem;
 }
 
-.modal-menu li ul {
-    padding-left: 0;
+.modal-menu li > a :hover, .modal-menu ul li > a :hover {
+    text-decoration:underline;
 }
 
 .main{
@@ -264,7 +270,7 @@ a:hover {
 
 .special-thanks{
     text-align: center;
-    padding-bottom: 2%;
+    padding: 2%;
 }
 
 .social
@@ -275,6 +281,7 @@ a:hover {
     padding: 50px 30px;
     background-color: rgb(39, 37, 37);
     justify-content: space-between;
+    gap: 5rem;
 }
 .copyright
 {
@@ -344,13 +351,13 @@ a:hover {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-
-
+@media only screen and (max-width: 768px) {
     
-.version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
-    transform: scale(0.9);
-    gap: 0;
+    .version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
+        transform: scale(0.95);
+        gap: 0;
+    }
+
+
 }
-  }
 

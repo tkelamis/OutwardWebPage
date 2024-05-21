@@ -166,9 +166,20 @@ body{
     width: 70%;
 }
 
-.modal-menu a{
+.modal-menu{
+    width: 180px;
+}
+
+.modal-menu a,p{
     text-decoration: none;
     color: white;
+    font-size: 19px;
+    margin-bottom: 0;
+}
+
+.modal-menu a:hover{
+    letter-spacing: 1px;
+    transition: letter-spacing 0.3s ease;
 }
 
 .modal-menu li li a:hover{
@@ -179,14 +190,19 @@ body{
 .modal-menu ul ul {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 10px;
 }
 
 .modal-menu li {
-    padding-left: 1rem; /* Adjust spacing as needed */
+    padding-left: 1rem;
 }
 
-.modal-menu li ul {
-    padding-left: 0; /* Reset padding for nested lists */
+.modal-menu li > a :hover, .modal-menu ul li > a :hover {
+    text-decoration:underline;
+}
+
+.category-imgAndTitleDiv p{
+    font-size: 16px;
 }
 
 .social
@@ -216,6 +232,14 @@ body{
     color: rgb(45, 45, 156);
 }
 
+div.dt-container .dt-input {
+    background-color: #41275c !important;
+}
+
+#dt-length-0{
+    margin-right: 5px;
+}
+
 @media only screen and (max-width: 992px) {
     .nav-menu{
         display: none !important;
@@ -243,15 +267,13 @@ body{
 }
 
 
-/* @media only screen and (max-width: 768px) {
-
-    .skill-tree-image{
-        width: 270.9px;
-        height: 331.1;
-    }
+@media only screen and (max-width: 768px) {
     
-    .skill-tree-image img{
-        width: 100%;
-        height: 100%;
+    .categoryAndDescription{
+        width: 100% !important; 
     }
-} */
+
+    .new-div-container{
+        width: 90% !important;
+    }
+}
