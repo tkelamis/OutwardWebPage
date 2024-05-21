@@ -363,5 +363,12 @@ a:hover {
     .welcoming-message{
         gap: 1rem;
     }
+
+    .main_container{
+        background-image: url(./Images/general_Images/Outward-landscape2.png);
+        background-position: center;
+        background-size: 2880px 1215px;
+        background-attachment:fixed;
+    }
 }
 
