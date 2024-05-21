@@ -17,13 +17,10 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh ;
-    
 }
 
 .red-bg{
@@ -240,6 +237,19 @@ div.dt-container .dt-input {
     margin-right: 5px;
 }
 
+
+
+
+.page-image-container{
+    width: 468.5px;
+    height: 248.5px;
+}
+
+.page-image-container img{
+    width: 100%;
+    height: 100%;
+}
+
 @media only screen and (max-width: 992px) {
     .nav-menu{
         display: none !important;
@@ -276,4 +286,19 @@ div.dt-container .dt-input {
     .new-div-container{
         width: 90% !important;
     }
+
+    .page-image-container{
+        width: 374.8px;
+        height: 198.8px;
+    }
+
+    #page-description{
+        font-size: 17px;
+    }
+
+    #example{
+        font-size: 10px;
+    }
+
 }
+

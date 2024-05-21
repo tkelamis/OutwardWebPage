@@ -1,6 +1,6 @@
 {
     "name":"equipment",
-    "Description":"Armor is used most commonly for defensive or offensive stats, though it can also have other stats or effects.",
+    "description":"Armor is used most commonly for defensive or offensive stats, though it can also have other stats or effects.",
     "titlesOfCategory": ["Helmets", "Body", "Boots", "Backpacks"],
     "items": [
         {

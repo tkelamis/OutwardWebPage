@@ -8,7 +8,6 @@
   <script src="../../shared/javascript/loadMenu-Button.js"></script>
   
   <script> const page = "consumables"; </script>
-  <script src="consumables.js" defer></script>
   <script src="../../shared/javascript/loadTablePage.js" defer></script>
   
   
@@ -30,8 +29,12 @@
   <div id="header-container"></div>
 
   <div class="new-div-container onscreen" id="newDiv">
-    <div class="categoryAndDescription col-10" id="categoryAndDescription">
+    <div class="categoryAndDescription d-flex gap-3 col-10 justify-content-center align-items-center" id="categoryAndDescription">
+      <h3 id="headline"></h3>
       <p id="page-description"></p>
+      <div class="page-image-container">
+        <img src="../../Images/consumables/consumables.png" alt="sets">
+      </div>
     </div>
   </div>
 

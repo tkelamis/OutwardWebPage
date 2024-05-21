@@ -5,6 +5,8 @@ main();
 
 async function main () {
 
+    document.getElementById('headline').textContent = page.charAt(0).toUpperCase() + page.slice(1).toLowerCase();;
+
     data = await fetchJsonData();
 
     document.getElementById('page-description').textContent = data.description;
@@ -21,8 +23,12 @@ async function main () {
         
         populateTable(data.items);
     }
-
-    scrollToDiv();
+    
+    if (window.innerWidth < 768)
+    {
+        scrollToDiv();
+    }
+    
 }
 
 
@@ -185,7 +191,7 @@ function scrollToDiv(){
             target = $('#dataTable').offset().top- 200;
             $('html, body').animate({
                 scrollTop: target
-            }, 'slow');
+            }, 'normal');
         })
     }
 }

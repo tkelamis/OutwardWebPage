@@ -9,7 +9,6 @@
   
 
   <script> const page = "equipment"; </script>
-  <script src="equipment.js" defer></script>
   <script src="../../shared/javascript/loadTablePage.js" defer></script>
   
   
@@ -31,8 +30,10 @@
   <div id="header-container"></div>
 
   <div class="new-div-container onscreen" id="newDiv">
-    <div class="categoryAndDescription col-10" id="categoryAndDescription">
-      <p id="page-description"></p>
+    
+    <div class="categoryAndDescription d-flex flex-column gap-3 col-10 justify-content-center align-items-center" id="categoryAndDescription">
+      <h3 id="headline"></h3>
+      <p id="page-description" class="pb-2"></p>
     </div>
   </div>
   

@@ -52,14 +52,30 @@ function HomePageEditionDescription()
         $(version.clickClass).click(
             function()
             {
+                
                 for (let i of versions)
                 {
                     if (i.slideClass !== version.slideClass && $(i.slideClass).is(":visible"))
                     {
                         $(i.slideClass).slideUp();
+                        console.log(i.slideClass);
                     }
+                    
                 }
-                $(version.slideClass).slideToggle();
+                if (window.innerWidth < 768)
+                {
+                    $(version.slideClass).slideToggle('normal', function() {
+                        let target = $(version.slideClass).offset().top - 200;
+                        $('html, body').animate({
+                            scrollTop: target
+                        }, 'normal');
+                    })
+                }
+                else
+                {
+                    $(version.slideClass).slideToggle();
+                }
+                
             }
         )
     }
