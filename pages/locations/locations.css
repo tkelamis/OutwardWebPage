@@ -44,6 +44,7 @@
 {
     display: none;
     margin: 0 auto;
+    flex-wrap: wrap;
     color: white;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +76,6 @@
 }
 
 
-
 .location-description{
     margin: 0 auto;
 }
@@ -99,6 +99,7 @@
     margin: 0 auto;
     gap: 3rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,8 +115,8 @@
 }
 
 .img-map{
-    width: 330px;
-    height: 330px;
+    width: 290px;
+    height: 290px;
 }
 .img-map img {
     width: 100%;

@@ -19,7 +19,7 @@
     background-attachment:fixed;
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +207,7 @@ a:hover {
 }
 
 .main{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     color: white;
 }
 
