@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100lvh;
+    height: 100lvh;
 }
 
 .red-bg{
