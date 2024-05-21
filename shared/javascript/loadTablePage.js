@@ -7,31 +7,30 @@ async function main () {
 
     document.getElementById('headline').textContent = page.charAt(0).toUpperCase() + page.slice(1).toLowerCase();;
 
+    // fetching json
     data = await fetchJsonData();
 
     document.getElementById('page-description').textContent = data.description;
     
+    //Dynamically create category divs if found in json
     if (data.titlesOfCategory)
     {
         renderCategories(page);
         
     }
-    
     if (data.items.length > 0) {
 
         renderTable();
         
         populateTable(data.items);
     }
-    
+
+    // if small screen, when div created scroll to it
     if (window.innerWidth < 768)
     {
         scrollToDiv();
     }
-    
 }
-
-
 
 async function fetchJsonData()
 {
@@ -72,12 +71,9 @@ function renderCategories()
         title.textContent = data.titlesOfCategory[i];
         imgAndTitleDiv.appendChild(title);
     }
-
     const filterButtonDiv = document.createElement('div');
     filterButtonDiv.classList.add('text-center' , 'p-3')
     document.getElementById("categoryAndDescription").appendChild(filterButtonDiv);
-
-
 
     const filterButton = document.createElement('button');
     
@@ -90,7 +86,6 @@ function renderCategories()
         filterButton.classList.add('filter-button-skills');
         
     }
-    
     filterButton.setAttribute('id', 'clearFilters');
     filterButton.textContent = 'Show All';
     filterButtonDiv.appendChild(filterButton);
@@ -195,5 +190,3 @@ function scrollToDiv(){
         })
     }
 }
-
-

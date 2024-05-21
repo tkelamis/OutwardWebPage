@@ -100,8 +100,6 @@
     padding: 50px 30px;
     background-color: rgb(39, 37, 37);
     justify-content: space-between;
-    
-    
 }
 .copyright
 {
@@ -114,6 +112,7 @@
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
+
 .social-apps i
 {
     font-size: 2.3rem;
@@ -126,4 +125,3 @@
         width: 80% !important;
     }
 }
-

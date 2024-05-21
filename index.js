@@ -24,21 +24,18 @@ const versions =[
     }
 ]
 
-
 function HideEditionDescription()
 {
     for (let version of versions) 
     {
         $(version.slideClass).hide();
     }
-    
 }
 
 function HomePageEditionDescription()
 {
     for (let version of versions) 
     {
-
         $(version.clickClass).hover(
             function()
             {
@@ -52,7 +49,6 @@ function HomePageEditionDescription()
         $(version.clickClass).click(
             function()
             {
-                
                 for (let i of versions)
                 {
                     if (i.slideClass !== version.slideClass && $(i.slideClass).is(":visible"))
@@ -62,6 +58,8 @@ function HomePageEditionDescription()
                     }
                     
                 }
+
+                // For small screens the page scrolles to the div appearing
                 if (window.innerWidth < 768)
                 {
                     $(version.slideClass).slideToggle('normal', function() {
@@ -75,7 +73,6 @@ function HomePageEditionDescription()
                 {
                     $(version.slideClass).slideToggle();
                 }
-                
             }
         )
     }

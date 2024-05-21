@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
 
-
 *
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 .main_container{
     font-family: 'Quicksand', sans-serif;
     background-image: url(./Images/general_Images/Outward-landscape2.png);
@@ -21,17 +19,13 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-   
 }
-
 a{
     color: inherit;
 }
-
 a:hover {
     color: rgb(163, 159, 159);
-  }
-
+}
 .red-bg{
     background-color: red;
     color: white;
@@ -40,24 +34,19 @@ a:hover {
     background-color: black;
     color: white;
 }
-
 .roboto-normal{
     font-family: 'Roboto Slab', serif;
 }
-
 .roboto-light{
     font-family: 'Roboto Slab', serif;
     color:rgb(218, 215, 215);
 }
-
 .hidden{
     display: none;
 }
-
 .letter-space-4px{
     letter-spacing: 4px;
 }
-
 .header{
     height: 80px;
     z-index:100;
@@ -65,34 +54,27 @@ a:hover {
     background-color: #311d47;
     position: fixed;
 }
-
 .header li{
     text-decoration: none;
     list-style-type: none;
 }
-
 .menu-logo-image{
     width: 340px;
     cursor: pointer;
 }
-
 .logo-image{
     width: 340px;
 }
-
 .nav-menu{
     width: 60%;
     height: 80px;
 }
-
 .nav-menu > ul > li:hover > ul{
     display: block;
 }
-
 .nav-menu > ul > li{
     position: relative;
 }
-
 .nav-menu > ul ul
 {
     display: none;
@@ -106,17 +88,14 @@ a:hover {
     background-color:#311d47;
     box-shadow: 0px 4px 8px black;
 }
-
 .nav-menu li li:first-child
 {
     padding-top: 20px;
 }
-
 .nav-menu li li
 {
     padding: 15px;
 }
-
 .nav-menu li li:hover
 {
     color: rgb(255, 255, 255);
@@ -124,7 +103,6 @@ a:hover {
     border-bottom: 1px solid rgb(138, 136, 136);
     transition: all 0.3s ease;
 }
-
 .nav-menu a{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -132,105 +110,85 @@ a:hover {
     text-decoration: none;
     color: rgb(204, 202, 202);
 }
-
 .button-small-screen{
     text-align: right;
     font-size: 30px;
     padding-right: 30px; 
 }
-
 .modal-dialog{
     margin: 0;
 }
-
 .modal-content{
     background-color: #311d47;
     border-bottom: none;
     border-top: none;
 }
-
 .modal-body{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .modal-header,.modal-footer {
     border-bottom: none;
     border-top: none;
 }
-
 .modal-header .btn-close{
     font-size: 20px;
 }
-
 .modal-header img{
     height: 70%;
     width: 70%;
 }
-
 .modal-menu{
     width: 180px;
 }
-
 .modal-menu a, .modal-menu p{
     text-decoration: none;
     color: white;
     font-size: 19px;
     margin-bottom: 0;
 }
-
 .modal-menu a:hover{
     letter-spacing: 1px;
     transition: letter-spacing 0.3s ease;
 }
-
 .modal-menu li li a:hover{
     text-decoration:underline;
 }
-
 .modal-menu ul, 
 .modal-menu ul ul {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 10px;
 }
-
 .modal-menu li {
     padding-left: 1rem;
 }
-
 .modal-menu li > a :hover, .modal-menu ul li > a :hover {
     text-decoration:underline;
 }
-
 .main{
     margin-top: 80px;
     color: white;
 }
-
 .welcoming-message{
     padding-top: 70px;
     padding-bottom: 70px;
     gap: 3rem;
 }
-
 .versionOfTheGame{
     
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-
 .version-DefinitiveEdition, .version-Soroboreans, .version-TheThreeBrothers{
     width: 194px;
     height: 259px;
 }
-
 .versionOfTheGame img{
     width: 194px;
     height: 259px;
 }
-
 .information-definitiveEdition, .information-Soroboreans, .information-TheThreeBrothers{
     background-color: #311d47;
     border-radius: 45px;
@@ -239,13 +197,11 @@ a:hover {
     text-align: center;
 
 }
-
 .edition-title{
     border: 2px solid white;
     padding: 10px 50px;
     border-radius: 10px;
 }
-
 .main-text
 {
     width: 100%;
@@ -253,24 +209,20 @@ a:hover {
     padding: 30px 15px;
     background-color: #41275c;
 }
-
 .main-text > h2{
     padding-bottom: 30px;
     font-family: 'Roboto Slab', serif;
     color: black;
 }
-
 .main-text-Subtitle
 {
     color: black;
     font-family: 'Quicksand', sans-serif;
 }
-
 .special-thanks{
     text-align: center;
     padding: 2%;
 }
-
 .social
 {
     display: flex;
@@ -286,7 +238,6 @@ a:hover {
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
-
 .social-apps
 {
     color: white;
@@ -298,8 +249,6 @@ a:hover {
     font-size: 30px;
     color: rgb(45, 45, 156);
 }
-
-
 
 @media only screen and (max-width: 992px) {
     .nav-menu{
@@ -326,8 +275,6 @@ a:hover {
         font-size: 16px;
     }
 
-    
-
     .versions h3{
         font-size: 20px;
     }
@@ -347,7 +294,7 @@ a:hover {
     .social{
         font-size: 15px;
     }
-  }
+}
 
 @media only screen and (max-width: 768px) {
     
@@ -363,10 +310,11 @@ a:hover {
     .welcoming-message{
         gap: 1rem;
     }
-
-    .main_container{
-        background-size: cover;
-        background-attachment:scroll;
-    }
 }
 
+@media only screen and (max-width: 480px) {
+    .main_container{
+        background-image: none;
+        background-color: rgb(59, 59, 59);
+    }
+}

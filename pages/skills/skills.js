@@ -86,7 +86,6 @@ function createSkills(trainer)
         $('<img>',{ src: `../../Images/skills/${trainer.title}_Tree.png` })).appendTo(newSkillsDiv);
 
     $('<div>',{class:'all-skills d-flex mx-auto col-8'}).appendTo(newSkillsDiv);
-    
 
     for (let skill of trainer.skills)
     {

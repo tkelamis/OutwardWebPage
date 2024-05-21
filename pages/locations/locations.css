@@ -75,7 +75,6 @@
     background-color:rgb(42, 51, 77)
 }
 
-
 .location-description{
     margin: 0 auto;
 }
@@ -97,7 +96,7 @@
 .location-mainlocations{
     display: flex;
     margin: 0 auto;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -122,5 +121,4 @@
     width: 100%;
     height: 100%;
 }
-
 }

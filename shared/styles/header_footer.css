@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
 
-
 *
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: 'Quicksand', sans-serif;
     background-image: url(../../Images/general_Images/Outward-landscape2.png);
@@ -22,7 +20,6 @@ body{
     justify-content: center;
     min-height: 100vh ;
 }
-
 .red-bg{
     background-color: red;
     color: white;
@@ -31,26 +28,19 @@ body{
     background-color: black;
     color: white;
 }
-
 .roboto-normal{
     font-family: 'Roboto Slab', serif;
 }
-
-
 .roboto-light{
     font-family: 'Roboto Slab', serif;
     color:rgb(218, 215, 215);
 }
-
 .hidden{
     display: none;
 }
-
 .letter-space-4px{
     letter-spacing: 4px;
 }
-
-
 .header{
     height: 80px;
     z-index:100;
@@ -58,34 +48,27 @@ body{
     background-color: #311d47;
     position: fixed;
 }
-
 .header li{
     text-decoration: none;
     list-style-type: none;
 }
-
 .menu-logo-image{
     width: 340px;
     cursor: pointer;
 }
-
 .logo-image{
     width: 340px;
 }
-
 .nav-menu{
     width: 60%;
     height: 80px;
 }
-
 .nav-menu > ul > li:hover > ul{
     display: block;
 }
-
 .nav-menu > ul > li{
     position: relative;
 }
-
 .nav-menu > ul ul
 {
     display: none;
@@ -99,17 +82,14 @@ body{
     background-color:#311d47;
     box-shadow: 0px 4px 8px black;
 }
-
 .nav-menu li li:first-child
 {
     padding-top: 20px;
 }
-
 .nav-menu li li
 {
     padding: 15px;
 }
-
 .nav-menu li li:hover
 {
     padding: 15px;
@@ -118,7 +98,6 @@ body{
     border-bottom: 1px solid rgb(138, 136, 136);
     transition: all 0.3s ease;
 }
-
 .nav-menu a{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -126,82 +105,66 @@ body{
     text-decoration: none;
     color: rgb(204, 202, 202);
 }
-
 .button-small-screen{
     text-align: right;
     font-size: 30px;
     padding-right: 30px; 
 }
-
 .modal-dialog{
     margin: 0;
 }
-
 .modal-content{
     background-color: #311d47;
     border-bottom: none;
     border-top: none;
 }
-
 .modal-body{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .modal-header,.modal-footer {
     border-bottom: none;
     border-top: none;
 }
-
 .modal-header .btn-close{
     font-size: 20px;
 }
-
 .modal-header img{
     height: 70%;
     width: 70%;
 }
-
 .modal-menu{
     width: 180px;
 }
-
 .modal-menu a,p{
     text-decoration: none;
     color: white;
     font-size: 19px;
     margin-bottom: 0;
 }
-
 .modal-menu a:hover{
     letter-spacing: 1px;
     transition: letter-spacing 0.3s ease;
 }
-
 .modal-menu li li a:hover{
     text-decoration:underline;
 }
-
 .modal-menu ul, 
 .modal-menu ul ul {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 10px;
 }
-
 .modal-menu li {
     padding-left: 1rem;
 }
-
 .modal-menu li > a :hover, .modal-menu ul li > a :hover {
     text-decoration:underline;
 }
-
 .category-imgAndTitleDiv p{
     font-size: 16px;
 }
-
 .social
 {
     display: flex;
@@ -216,7 +179,6 @@ body{
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
-
 .social-apps
 {
     color: white;
@@ -228,7 +190,6 @@ body{
     font-size: 30px;
     color: rgb(45, 45, 156);
 }
-
 div.dt-container .dt-input {
     background-color: #41275c !important;
 }
@@ -236,15 +197,10 @@ div.dt-container .dt-input {
 #dt-length-0{
     margin-right: 5px;
 }
-
-
-
-
 .page-image-container{
     width: 468.5px;
     height: 248.5px;
 }
-
 .page-image-container img{
     width: 100%;
     height: 100%;
@@ -273,9 +229,7 @@ div.dt-container .dt-input {
     .social{
         font-size: 15px;
     }
-
 }
-
 
 @media only screen and (max-width: 768px) {
     
@@ -299,6 +253,13 @@ div.dt-container .dt-input {
     #example{
         font-size: 10px;
     }
+}
 
+@media only screen and (max-width: 480px) {
+
+    body{
+        background-image: none;
+        background-color: rgb(59, 59, 59);
+    }
 }
 

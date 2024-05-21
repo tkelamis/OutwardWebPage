@@ -6,9 +6,7 @@ $(document).ready(function()
 function CarouselLocation()
 {
     const sliderIndicators = $('#carouselExampleIndicators .carousel-indicators li');
-
     const carouselControls = $('[class*="carousel-control"]');
-
     let index = 0;
 
     const locations = [ 
@@ -21,12 +19,10 @@ function CarouselLocation()
     ]
 
     $(carouselControls).on('click', changeCarousel)
- 
     $(sliderIndicators).on('click', changeCarousel)
  
     function changeCarousel()
     {
-       
         for (let i=0; i < sliderIndicators.length; i++)
         {
             if ($(sliderIndicators[i]).hasClass('active'))
@@ -43,8 +39,7 @@ function CarouselLocation()
             else
             {
                 location.css({'display':'none'});
-            }}
-                   
+            }}       
         );
     }
 }
