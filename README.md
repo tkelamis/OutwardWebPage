@@ -1,4 +1,4 @@
-# Outward WEb Page
+# Outward Web Page
 
 ## Description
 
