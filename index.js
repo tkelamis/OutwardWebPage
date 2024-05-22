@@ -54,7 +54,6 @@ function HomePageEditionDescription()
                     if (i.slideClass !== version.slideClass && $(i.slideClass).is(":visible"))
                     {
                         $(i.slideClass).slideUp();
-                        console.log(i.slideClass);
                     }
                     
                 }

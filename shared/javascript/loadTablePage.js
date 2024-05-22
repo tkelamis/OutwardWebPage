@@ -18,6 +18,7 @@ async function main () {
         renderCategories(page);
         
     }
+    
     if (data.items.length > 0) {
 
         renderTable();
