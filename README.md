@@ -1,5 +1,4 @@
 # Outward Web Page
-By Kelamis
 
 ## Description
 
